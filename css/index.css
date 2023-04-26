@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --accent: #03b077;
+    --accent-dark: #026a47;
+    --accent-light: #5acfa9;
+    --accent-lighter: #b1eeda;
+    --accent-lightest: #c6f6e7;
+
+    --accent-danger: #eb5858;
+    --accent-danger-light: #eb585822;
+
+    --bg: #f4f6f9;
+    --bg-layer1: #fff;
+    --bg-layer2: #f5f6f9;
+    --bg-layer3: #f0f2f5;
+    --bg-layer4: #e4e6eb;
+
+    --fc-strong: #222736;
+    --fc-body: #5c6173;
+    --fc-body-light: #9299ad;
+    --fc-body-lighter: #b2b9ce;
+
+    --border-color: #e0e4f5;
+
+    --padding: 12px;
+}
+
+body {
+    background-color: var(--bg);
+
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(1em * 1.618);
+
+    color: var(--fc-body);
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: 36px;
+    line-height: calc(36px * 1.618);
+    color: var(--fc-strong);
+    font-weight: 800;
+    letter-spacing: 2%;
+}
+h2 {
+    font-size: 24px;
+    line-height: calc(24px * 1.618);
+    color: var(--fc-strong);
+    font-weight: 700;
+    letter-spacing: 2%;
+}
+
+.title {
+    font-family: 'Inter';
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--fc-strong);
+}
+
+.smaller-text {
+    font-size: 0.8em;
+    color: var(--fc-body);
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.05em;
+}
+
+button {
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 18px;
+    gap: 10px;
+    border-radius: 4px;
+    align-self: stretch;
+
+    font-weight: 500;
+
+    /* width: 100%; */
+}
+.btn-fill {
+    width: 100%;
+}
+
+.btn-outlined-danger {
+    border: 1px solid #eb5858;
+    color: #eb5858;
+}
+.btn-outlined {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.card {
+    margin-top: 1em;
+    background-color: var(--bg-layer3);
+    border-radius: 16px;
+    padding: 12px 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card h1 {
+    text-align: end;
+    font-size: 64px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+.l1 {
+    background-color: var(--bg-layer4);
+}
+.l2 {
+    background-color: var(--bg-layer3);
+}
+.l3 {
+    background-color: var(--bg-layer2);
+}
+.l4 {
+    background-color: var(--bg-layer1);
+}
+.a1 {
+    background-color: var(--accent-dark);
+}
+.a2 {
+    background-color: var(--accent);
+}
+.a3 {
+    background-color: var(--accent-light);
+}
+.a4 {
+    background-color: var(--accent-lighter);
+}
+.a5 {
+    background-color: var(--accent-lightest);
+}
+.t1 {
+    background-color: var(--fc-strong);
+}
+.t2 {
+    background-color: var(--fc-body);
+}
+.t3 {
+    background-color: var(--fc-body-light);
+}
+.t4 {
+    background-color: var(--fc-body-lighter);
+}
+.colors {
+    display: flex;
+    flex-direction: row;
+}
