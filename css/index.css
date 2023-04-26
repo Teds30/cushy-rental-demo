@@ -41,7 +41,6 @@ body {
     line-height: calc(1em * 1.618);
 
     color: var(--fc-body);
-    padding: var(--padding);
 }
 
 h1 {
@@ -76,9 +75,6 @@ h2 {
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.05em;
-}
-
-button {
 }
 
 .btn {

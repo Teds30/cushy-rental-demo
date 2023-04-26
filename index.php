@@ -15,6 +15,12 @@
 
 </head>
 
+<style>
+    body {
+        padding: var(--padding);
+    }
+</style>
+
 <body>
     <h1>Typography</h1>
     <p>Use typography to make writing legible and beautiful. Material's default type scale includes contrasting and flexible styles to support a wide range of use cases.</p>
