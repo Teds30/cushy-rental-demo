@@ -57,9 +57,9 @@
                 </div>
             </div>
             <div class="unit-actions">
-                <div class="btn btn-outlined-danger btn-fill">
+                <button class="btn btn-outlined-danger btn-fill">
                     Cancel Unit Request
-                </div>
+                </button>
             </div>
         </div>
 
