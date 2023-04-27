@@ -1,4 +1,9 @@
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +17,7 @@ nav {
 }
 
 .row {
+    margin-top: 6em;
     display: flex;
     flex-direction: column;
     gap: 12px;
