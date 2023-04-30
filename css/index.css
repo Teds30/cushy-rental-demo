@@ -120,6 +120,22 @@ button {
     background-color: var(--accent);
     color: #fff;
 }
+.btn-plain {
+    background-color: transparent;
+    color: var(--fc-strong);
+    /* border: 1px solid red; */
+}
+
+.btn span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+}
+.btn span svg {
+    width: 24px;
+    height: 24px;
+}
 
 .card {
     margin-top: 1em;
@@ -189,4 +205,26 @@ hr {
 .colors {
     display: flex;
     flex-direction: row;
+}
+
+a.link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.status-chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 8px;
+    border-radius: 25px;
+    max-width: fit-content;
+
+    background: #5171e6;
+    color: #fff;
+
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 0.85em;
 }
