@@ -12,10 +12,9 @@
 
 <body>
     <h2>Hi Johns</h2>
-    <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam id perspiciatis non nisi reprehenderit ipsam recusandae impedit reiciendis, perferendis vitae expedita accusamus unde numquam voluptatum. Ut consectetur perferendis dolores a at placeat quas quia, quam nulla aliquam nesciunt aspernatur.</p>
-    <div class="green-box">
-
-    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquam id perspiciatis non nisi reprehenderit ipsam recusandae impedit reiciendis, perferendis vitae expedita accusamus unde numquam voluptatum. Ut consectetur perferendis dolores a at placeat quas quia, quam nulla aliquam nesciunt aspernatur.</p>
+    <!-- <div class="green-box"> </div> -->
+    <button class="btn btn-outlined">Example Button</button>
 </body>
 
 </html>
