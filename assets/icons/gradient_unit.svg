@@ -1,0 +1,38 @@
+<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="11.7843" width="39.2157" height="40" rx="8" fill="#5171E5"/>
+<g filter="url(#filter0_b_1420_6546)">
+<rect x="40.2157" y="10" width="40" height="39.2157" rx="8" transform="rotate(90 40.2157 10)" fill="url(#paint0_linear_1420_6546)" fill-opacity="0.5"/>
+<rect x="40.7157" y="9.5" width="41" height="40.2157" rx="8.5" transform="rotate(90 40.7157 9.5)" stroke="url(#paint1_radial_1420_6546)"/>
+<rect x="40.7157" y="9.5" width="41" height="40.2157" rx="8.5" transform="rotate(90 40.7157 9.5)" stroke="url(#paint2_radial_1420_6546)"/>
+<rect x="40.7157" y="9.5" width="41" height="40.2157" rx="8.5" transform="rotate(90 40.7157 9.5)" stroke="url(#paint3_radial_1420_6546)"/>
+</g>
+<path d="M21.5882 37V30L16.6863 25L11.7843 30V37H16.6863M21.5882 37H16.6863M21.5882 37H29.4314V20C29.4314 19.7348 29.3281 19.4804 29.1442 19.2929C28.9603 19.1054 28.711 19 28.451 19H18.647C18.387 19 18.1377 19.1054 17.9538 19.2929C17.7699 19.4804 17.6667 19.7348 17.6667 20V26M16.6863 37V33" stroke="white" stroke-opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.5883 23V23.01" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5098 23V23.01" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5098 27V27.01" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5098 31V31.01" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_b_1420_6546" x="-20" y="-11" width="81.2157" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1420_6546"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1420_6546" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1420_6546" x1="40.2157" y1="10" x2="63.9109" y2="57.3714" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.4"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<radialGradient id="paint1_radial_1420_6546" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2157 29.6078) rotate(-133.147) scale(37.3172 28.9919)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint2_radial_1420_6546" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2157 29.6078) rotate(40.1198) scale(31.3849 22.4729)">
+<stop stop-color="#5171E5"/>
+<stop offset="1" stop-color="#0938DF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint3_radial_1420_6546" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.2157 29.6078) rotate(136.523) scale(30.2072 22.5432)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#5171E5" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
