@@ -2,6 +2,7 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
 
 * {
     box-sizing: border-box;
@@ -9,7 +10,8 @@
 }
 :root {
     --accent: #03b077;
-    /* --accent-dark: #026a47; */
+    --accent-light-opacity: #03b07724;
+
     --accent-dark: #1d6156;
     --accent-light: #5acfa9;
     --accent-lighter: #b1eeda;
@@ -32,6 +34,9 @@
     --border-color: #e0e4f5;
 
     --padding: 12px;
+
+    --subscription-gold: rgb(254, 223, 55);
+    --subscription-gold-bg: rgba(254, 223, 55, 0.15);
 }
 
 body {
@@ -70,6 +75,17 @@ h2 {
     color: var(--fc-strong);
 }
 
+.caption {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--fc-body-light);
+}
+.strong {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--fc-strong);
+}
+
 .smaller-text {
     font-size: 0.8em;
     color: var(--fc-body);
@@ -82,6 +98,10 @@ h2 {
     letter-spacing: 0.05em;
 }
 
+.col {
+    display: flex;
+    gap: 12px;
+}
 button {
     background-color: transparent;
     border: none;
@@ -92,13 +112,14 @@ button {
 
 .btn {
     display: flex;
+    width: fit-content;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 
     padding: 12px 18px;
     gap: 10px;
-    border-radius: 4px;
+    border-radius: 8px;
     align-self: stretch;
 
     font-weight: 500;
@@ -122,6 +143,11 @@ button {
     background-color: var(--accent);
     color: #fff;
 }
+.btn-secondary {
+    background-color: var(--bg-layer2);
+    color: var(--fc-body);
+}
+
 .btn-plain {
     background-color: transparent;
     color: var(--fc-strong);
@@ -137,6 +163,11 @@ button {
 .btn span svg {
     width: 24px;
     height: 24px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 12px;
 }
 
 .card {
@@ -159,6 +190,82 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid var(--border-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+    padding: 12px 12px;
+    color: var(--fc-body);
+}
+
+input:focus {
+    /* outline: 1px solid rgba(3, 176, 119, 0.14); */
+    outline: 3px solid var(--accent-light-opacity);
+    border: 1px solid var(--accent);
+}
+.tf-short {
+    width: 300px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: var(--accent);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--accent);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 .box {
@@ -288,4 +395,28 @@ a.link {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.subs-card {
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.subs-card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subs-gold {
+    background-color: var(--subscription-gold-bg);
+    color: var(--subscription-gold);
 }
