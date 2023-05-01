@@ -3,6 +3,12 @@
 
 $selected = 'manage_units';
 
+include '../../../api/units/units.php';
+$q_units = units_index();
+$units = $q_units['data'];
+$msg = $q_units['msg'];
+
+
 ?>
 
 <html lang="en">
@@ -59,29 +65,27 @@ $selected = 'manage_units';
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <div class="td-picture-container">
-                                        <div class="td-picture-box"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt=""></div>
-                                        <div class="td-picture-content">
-                                            <p class="title">Tya Els Boarding House</p>
-                                            <p>Tya Els</p>
+                                <tr>
+                                    <td>
+                                        <div class="td-picture-container">
+                                            <div class="td-picture-box"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt=""></div>
+                                            <div class="td-picture-content">
+                                                <p class="title">Tya Els Boarding House</p>
+                                                <p>Tya Els</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-
-                                <td>5,000</td>
-                                <td>Rawis, Legazpi City</td>
-                                <td>4</td>
-                                <td>NONE</td>
-                                <td>
-                                    <div class="td-center">
-                                        <div class="status-chip">LISTED</div>
-                                    </div>
-
-                                </td>
-                                <td> <a href="manage_unit_details.php?unit_id=1" class="link">Manage</a> </td>
-                            </tr>
+                                    </td>
+                                    <td>5,000</td>
+                                    <td>Rawis, Legazpi City</td>
+                                    <td>4</td>
+                                    <td>NONE</td>
+                                    <td>
+                                        <div class="td-center">
+                                            <div class="status-chip">LISTED</div>
+                                        </div>
+                                    </td>
+                                    <td> <a href="manage_unit_details.php?unit_id=1" class="link">Manage</a> </td>
+                                </tr>
                         </tbody>
                     </table>
                 </div>
