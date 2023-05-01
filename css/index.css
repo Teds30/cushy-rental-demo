@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 * {
     box-sizing: border-box;
@@ -8,7 +9,8 @@
 }
 :root {
     --accent: #03b077;
-    --accent-dark: #026a47;
+    /* --accent-dark: #026a47; */
+    --accent-dark: #1d6156;
     --accent-light: #5acfa9;
     --accent-lighter: #b1eeda;
     --accent-lightest: #c6f6e7;
@@ -221,10 +223,69 @@ a.link {
     border-radius: 25px;
     max-width: fit-content;
 
-    background: #5171e6;
-    color: #fff;
-
     letter-spacing: 0.05em;
     font-weight: 600;
     font-size: 0.85em;
+}
+
+.status-chip-pending {
+    background: #5171e6;
+    color: #fff;
+}
+
+.icon-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    width: fit-content;
+
+    gap: 4px;
+    color: var(--fc-body-light);
+    font-weight: 500;
+}
+
+.icon-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.unit-attributes-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: fit-content;
+    gap: 12px;
+}
+
+.chip {
+    padding: 8px 16px 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 25px;
+    color: var(--fc-body);
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+}
+
+.chip-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: auto;
+}
+.chip-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
