@@ -77,7 +77,7 @@
                 </svg></div>
             <div class="sb-item-title">Amenities</div>
         </a>
-        <a class="sb-item <?php if ($selected == 'facilities') echo 'sb-selected' ?> " href="facilities.php">
+        <a class="sb-item <?php if ($selected == 'facilities') echo 'sb-selected' ?> " href="manage_facilities.php">
             <div class="sb-item-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
@@ -88,7 +88,7 @@
                 </svg></div>
             <div class="sb-item-title">Facilities</div>
         </a>
-        <a class="sb-item <?php if ($selected == 'inclusions') echo 'sb-selected' ?> " href="inclusions.php">
+        <a class="sb-item <?php if ($selected == 'inclusions') echo 'sb-selected' ?> " href="manage_inclusions.php">
             <div class="sb-item-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sitemap" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M3 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
@@ -100,7 +100,7 @@
             <div class="sb-item-title">Inclusions</div>
         </a>
 
-        <a class="sb-item <?php if ($selected == 'rules') echo 'sb-selected' ?> " href=" rules.php">
+        <a class="sb-item <?php if ($selected == 'rules') echo 'sb-selected' ?> " href=" manage_rules.php">
             <div class="sb-item-icon star"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-social-off" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
@@ -119,15 +119,6 @@
     <p class="pre-title">VERIFICATIONS</p>
 
     <div class="sb-item-group">
-        <a class="sb-item <?php if ($selected == 'landlord_verification') echo 'sb-selected' ?> " href="landlord_verification.php">
-            <div class="sb-item-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
-                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
-                    <path d="M15 19l2 2l4 -4"></path>
-                </svg></div>
-            <div class="sb-item-title">Landlord Verification</div>
-        </a>
         <a class="sb-item <?php if ($selected == 'unit_verification') echo 'sb-selected' ?> " href="unit_verification.php">
             <div class="sb-item-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
