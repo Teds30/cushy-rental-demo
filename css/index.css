@@ -37,6 +37,12 @@
 
     --subscription-gold: rgb(254, 223, 55);
     --subscription-gold-bg: rgba(254, 223, 55, 0.15);
+
+    --subscription-bronze: #cd7f32;
+    --subscription-bronze-bg: #cd7f3226;
+
+    --subscription-silver: #c0c0c0;
+    --subscription-silver-bg: #c0c0c026;
 }
 
 body {
@@ -172,6 +178,16 @@ button {
     gap: 12px;
 }
 
+.btn-container-left {
+    justify-content: flex-end;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
 .card {
     margin-top: 1em;
     background-color: var(--bg-layer3);
@@ -225,7 +241,7 @@ input:focus {
     display: flex;
     align-items: center;
     position: relative;
-    min-width: 268px;
+    /* min-width: 268px; */
     height: 50px;
 }
 
@@ -242,10 +258,11 @@ input:focus {
 }
 .custom__inputs input {
     width: 100%;
-    min-width: 268px;
+    /* min-width: 268px; */
     height: 50px;
     vertical-align: middle;
     color: var(--fc-body);
+    text-overflow: ellipsis;
 }
 
 .custom__inputs input:valid + span {
@@ -373,6 +390,22 @@ input:checked + .slider:before {
 a.link {
     color: var(--accent);
     text-decoration: none;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.link span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link svg {
+    width: 1em;
+    height: 1em;
 }
 
 .status-chip {
@@ -391,6 +424,11 @@ a.link {
 
 .status-chip-pending {
     background: #5171e6;
+    color: #fff;
+}
+
+.status-chip-success {
+    background: #03af76;
     color: #fff;
 }
 
