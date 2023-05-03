@@ -16,4 +16,3 @@ $APP_NAME = '/cr_demo';
 </head>
 
 <body>
-    <h1>Header included</h1>

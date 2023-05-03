@@ -37,6 +37,12 @@
 
   --subscription-gold: rgb(254, 223, 55);
   --subscription-gold-bg: rgba(254, 223, 55, 0.15);
+
+    --subscription-bronze: #cd7f32;
+    --subscription-bronze-bg: #cd7f3226;
+
+    --subscription-silver: #c0c0c0;
+    --subscription-silver-bg: #c0c0c026;
 }
 
 body {
@@ -117,8 +123,10 @@ button {
   justify-content: center;
   align-items: center;
 
+    height: fit-content;
+
   padding: 12px 18px;
-  gap: 10px;
+  gap: 8px;
   border-radius: 8px;
   align-self: stretch;
 
@@ -161,13 +169,23 @@ button {
   max-width: fit-content;
 }
 .btn span svg {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 
 .btn-container {
   display: flex;
   gap: 12px;
+}
+
+.btn-container-left {
+    justify-content: flex-end;
+    display: flex;
+    gap: 12px;
+}
+
+.btn-link {
+    text-decoration: none;
 }
 
 .card {
@@ -217,6 +235,59 @@ input:focus {
   outline: 3px solid var(--accent-light-opacity);
   border: 1px solid var(--accent);
 }
+
+.custom__inputs label {
+    /* border: 1px solid rgb(219, 219, 219); */
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* min-width: 268px; */
+    height: 50px;
+}
+
+.custom__inputs span {
+    position: absolute;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    font-size: 14px;
+    left: 12px;
+    pointer-events: none;
+    transition: transform ease-out 0.1s;
+
+    color: var(--fc-body-light);
+}
+.custom__inputs input {
+    width: 100%;
+    /* min-width: 268px; */
+    height: 50px;
+    vertical-align: middle;
+    color: var(--fc-body);
+    text-overflow: ellipsis;
+}
+
+.custom__inputs input:valid + span {
+    transform: scale(calc(10 / 12)) translateY(-18px);
+}
+
+.custom__inputs input:valid {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+select {
+    background-color: var(--bg-layer1);
+    padding: 1em;
+
+    border-radius: 7px;
+    border: 1px solid var(--border-color);
+
+    color: var(--fc-body);
+}
+select:focus {
+    outline: 3px solid var(--accent-light-opacity);
+    border: 1px solid var(--accent);
+}
+
 .tf-short {
   width: 300px;
 }
@@ -319,6 +390,22 @@ input:checked + .slider:before {
 a.link {
   color: var(--accent);
   text-decoration: none;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.link span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link svg {
+    width: 1em;
+    height: 1em;
 }
 
 .status-chip {
@@ -338,6 +425,11 @@ a.link {
 .status-chip-pending {
   background: #5171e6;
   color: #fff;
+}
+
+.status-chip-success {
+    background: #03af76;
+    color: #fff;
 }
 
 .icon-card {

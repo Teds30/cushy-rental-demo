@@ -25,7 +25,7 @@ img {
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
-    background: linear-gradient(90deg, #03B077 -2.06%, #7AB73D 104.45%);
+    background: linear-gradient(90deg, var(--accent) -2.06%, #7AB73D 104.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -35,7 +35,7 @@ img {
 .top_unit {
     position: absolute;
     top: 3px;
-    background: url(/modules/tenant/logo/card_box.svg) no-repeat;
+    background: url(../../logo/card_box.svg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 414px;
@@ -77,146 +77,121 @@ img {
     top: 45px;
 }
 
-.recommended {
+.recommended-section {
     position: relative;
-    top: 428px;
+    top: 430px;
     width: 100%;
 }
 
-.recommended > h2 {
-    margin-left: 19px;
+.recommended-section .smaller-text {
+    margin-left: 20px;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    color: #5C6173;
 }
 
-.recommended_list {
-    position: relative;
-    display: flex;
+.recommended-lists {
+    display: flex;  
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 12px;
-    flex-wrap: wrap;
+    margin: 10px 10px;
 }
 
-.recommended_list > .recommended_list_item {
-    /* position: relative; */
-    width: 165px;;
-    height: 220px;
-    margin-bottom: 11px;
-    background: #fff;
+.recommended-lists-item {
+    position: relative;
+    width: 165px;
+    background: var(--bg-layer1);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-.photo {
+.image {
     position: relative;
+    width: 165px;
+    height: 123px;
 }
 
-.photo a > img {
+.image img {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 165px;
     height: 123px;
     border-radius: 10px 10px 0 0;
 }
 
-.info {
+.title-price {
     position: relative;
-    width: 165px;
-    display: flex;
-    justify-content: space-between;
-    top: 130px;
 }
 
-.price_add {
-    margin-left: 8px;
-}
-
-.price_add > .title {
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.price_add > .pre-title {
-    margin-bottom: 7px;
-    font-size: 10px;
-    color: #5C6173;
-}
-
-.book-mark {
-    flex: 1;
-    margin-right: 8px;
-}
-
-.book-mark button {
-    position: relative;
-    top: -4px;
-    padding: 0;
-    width: 18px;
-    height: 24.18px;
-    float: right;
-    color: #03B077;
-}
-
-.rating {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 148px;
-    height: 20px;
-    top: 130px;
-    margin: 0 8px;
-    border-top: 0.5px solid #E0E4F5;
-    border-bottom: 0.5px solid #E0E4F5;
-}
-
-.rating > p {
-    position: relative;
-    margin: 0;
-    font-size: 8px;
-    bottom: -2px;
-}
-
-.stars > i {
-    position: relative;
+.title-price .book-mark {
+    position: absolute;
+    top: 0;
     right: 0;
-    top: -7px;
-    font-size: 10px;
-    color: #03B077;
 }
 
-.other_ammenities {
-    position: relative;
+.title-price .book-mark i {
+    color: var(--accent);
+}
+
+.title-price, .ratings {
+    margin: 8px 8px 0 8px;
+}
+
+s.title-price .pre-title {
+    font-family: 'Inter';
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.ratings {
     display: flex;
     justify-content: space-between;
-    top: 58%;
+    border-top: 0.5px solid var(--border-color);
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+.ratings >.pre-title {
+    line-height: normal;
+    font-size: 8px;
+    font-family: 'Inter';
+    margin-top: 14px;
+    line-height: 0;
+}
+
+.ratings .stars > i {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
 }
 
 .ammenities {
     display: flex;
-    position: relative;
-    margin: 9px 8px;
+    /* height: 100px; */
+    padding-bottom: 8px;
+    margin: 8px 8px;
 }
 
-.ammenities-item > .smaller-text {
-    font-size: 8px;
-    padding: 3px;
-    border: 1px solid #E4E9ED;
-    border-radius: 50px;
+.ammenities .chip {
+    width: 45px;
+    height: 16px;
     margin-right: 3px;
 }
 
-.more-item > .smaller-text {
-    font-size: 8px;
-    padding: 3px;
-    border: 1px solid #E4E9ED;
-    border-radius: 50px;
-    margin: 9px 8px;
+.ammenities .chip .chip-icon span {
+    /* padding: 1px; */
+    margin-left: 1px;
 }
+
+.ammenities .chip .chip-icon svg {
+    margin-top: -5px;
+}
+
+.ammenities .chip .chip-icon .pre-title {
+    font-size: 8px;
+    font-family: 'Inter';
+}
+
+.more {
+    display: flex;
+    justify-content: end;
+    flex: 2;
+}
+

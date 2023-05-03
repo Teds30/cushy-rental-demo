@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 
-$selected = 'amenities';
+$selected = 'facilities';
 
 
 include '.././../../functions/path.php';
@@ -14,7 +14,7 @@ include '.././../../functions/path.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Amenities</title>
+    <title>Manage Facilities</title>
     <link rel="stylesheet" href="/cr_demo/css/index.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -30,8 +30,8 @@ include '.././../../functions/path.php';
 
                 <div class="title-container">
 
-                    <h1>Manage Amenities</h1>
-                    <a class="btn btn-primary btn-link" href="add_attribute.php?attribute=amenity">
+                    <h1>Manage Facilities</h1>
+                    <a class="btn btn-primary btn-link" href="add_attribute.php?attribute=facility">
                         <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M12 5l0 14"></path>
@@ -44,7 +44,7 @@ include '.././../../functions/path.php';
                 <div class="table-container">
 
                     <div class="search-box">
-                        <input type="text" class="search-input" placeholder="Search an amenity">
+                        <input type="text" class="search-input" placeholder="Search an inclusion">
                     </div>
                     <div class="filter-container">
                         <button class="btn btn-plain">Status<span> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -57,6 +57,7 @@ include '.././../../functions/path.php';
                             <tr>
                                 <th>ICON</th>
                                 <th>NAME</th>
+                                <th>TYPE</th>
                                 <th>STATUS</th>
                             </tr>
                         </thead>
@@ -78,13 +79,14 @@ include '.././../../functions/path.php';
                                         </div>
                                     </div>
                                 </td>
-                                <td>CCTV</td>
+                                <td>Comfort Room</td>
+                                <td>Owned/Shared</td>
                                 <td>ACTIVE</td>
                             </tr>
                             <tr>
                                 <td colspan="3" class="td-details">
                                     <div id="data-1" class="attr-details">
-                                        <p class="title">Editing Amenity</p>
+                                        <p class="title">Editing Facility</p>
                                         <div class="attr-section">
 
                                             <div class="attr-icon-container">
@@ -102,6 +104,16 @@ include '.././../../functions/path.php';
                                                         <input required="" type="text">
                                                         <span>Name</span>
                                                     </label>
+                                                </div>
+
+                                            </div>
+                                            <div class="vl"></div>
+                                            <div class="attr-field">
+                                                <div class="custom-select" style="width:200px;">
+                                                    <select>
+                                                        <option value="0">Switch</option>
+                                                        <option value="1">Owned/Shared</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="vl"></div>
@@ -138,13 +150,14 @@ include '.././../../functions/path.php';
                                         </div>
                                     </div>
                                 </td>
-                                <td>Air Condition</td>
+                                <td>Kitchen Sink</td>
+                                <td>Owned/Shared</td>
                                 <td>ACTIVE</td>
                             </tr>
                             <tr>
                                 <td colspan="3" class="td-details">
                                     <div id="data-2" class="attr-details">
-                                        <p class="title">Editing Amenity</p>
+                                        <p class="title">Editing Facility</p>
                                         <div class="attr-section">
 
                                             <div class="attr-icon-container">
@@ -156,12 +169,21 @@ include '.././../../functions/path.php';
                                             </div>
                                             <div class="vl"></div>
                                             <div class="attr-field">
-
                                                 <div class="custom__inputs">
                                                     <label>
                                                         <input required="" type="text">
                                                         <span>Name</span>
                                                     </label>
+                                                </div>
+                                            </div>
+                                            <div class="vl"></div>
+                                            <div class="attr-field">
+
+                                                <div class="custom-select" style="width:200px;">
+                                                    <select>
+                                                        <option value="0">Switch</option>
+                                                        <option value="1">Owned/Shared</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="vl"></div>
