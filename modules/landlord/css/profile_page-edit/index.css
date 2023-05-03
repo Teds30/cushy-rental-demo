@@ -12,6 +12,7 @@ body {
 }
 
 .background-img {
+  z-index: -1;
   position: absolute;
   width: 381px;
   height: 190px;
@@ -32,7 +33,7 @@ body {
   align-items: flex-end;
   padding: 0px;
   gap: 16px;
-  margin-top: -20px;
+  margin-top: 20px;
   margin-left: 9px;
   color: #FFFFFF;
 }
