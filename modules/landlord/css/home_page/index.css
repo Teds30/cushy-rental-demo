@@ -76,13 +76,6 @@ h2 {
   background: #1d6156;
   border-radius: 16px;
 }
-.gradient-shape {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: #5171e5;
-  position: relative;
-}
 
 .box-2_container {
   display: flex;
@@ -120,6 +113,21 @@ h2 {
 
 .gradient {
   margin-left: 10px;
+}
+
+.gradient-shape {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.green-box {
+  background: var(--accent);
+}
+
+.blue-box {
+  background: #5171e5;
 }
 .gradient-icon {
   position: absolute;

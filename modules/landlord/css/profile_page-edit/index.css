@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Inter";
+  position: relative;
+  width: 360px;
+  height: 800px;
+  background: #f4f6f9;
+}
+
+.background-img {
+  position: absolute;
+  width: 381px;
+  height: 190px;
+  left: 0px;
+  top: -50px;
+}
+
+.camera-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 192px;
+  top: 194px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  margin-top: -20px;
+  margin-left: 9px;
+  color: #FFFFFF;
+}
+
+.image {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin-top: 50px;
+  margin-left: 131px;
+}
+
+.image img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 5px;
+  border: 5px solid #f4f6f9;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.profile-details_name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #222736;
+}
+
+.profile-details_landlord {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #8a93a6;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  margin-top: 69px;
+  margin-left: 45px;
+}
+
+input {
+  width: 271px;
+  height: 43px;
+}
+
+::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #959cb0;
+}
+
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 276px;
+  height: 42px;
+  border-radius: 30px;
+  margin-top: 72px;
+  margin-left: 43px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
