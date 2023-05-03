@@ -512,3 +512,11 @@ a.link {
     background-color: var(--subscription-gold-bg);
     color: var(--subscription-gold);
 }
+
+.vl {
+    margin: 18px;
+    width: 1px;
+
+    align-self: stretch;
+    border-left: 1px solid var(--border-color);
+}
