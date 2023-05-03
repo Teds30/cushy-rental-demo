@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <button class="btn-primary"><a href=""></a>Save
+    <button class="btn btn-primary"><a href=""></a>Save
     </button>
 </body>
 </html>

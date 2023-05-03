@@ -38,7 +38,7 @@
     </div>
 
     <div class="main-box_container">
-        <div class="box-1_container">
+        <a href="#" class="btn-link box-1_container">
             <div class="box-1">
                 <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_808_3848)">
@@ -55,7 +55,7 @@
 
                 <p>MANAGE RENTERS</p>
             </div>
-        </div>
+        </a>
         
         <div class="box-2_container">
             <div class="box-2">
