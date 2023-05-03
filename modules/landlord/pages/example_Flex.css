@@ -1,0 +1,24 @@
+.main-container {
+    border: 1px solid red;
+    padding: 12px;
+
+    width: fit-content;
+}
+
+.card {
+    width: 360px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+.card-container {
+    background-color: var(--accent-dark);
+    border: 1px solid red;
+    width: 360px;
+}
+
+.card-container {
+    display: flex;
+
+    border: 1px solid red;
+}

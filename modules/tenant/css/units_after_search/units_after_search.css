@@ -21,11 +21,11 @@
     margin-right: 15px;
 }
 
-.chip {
+/* .chip {
     width: 80px;
     height: 30px;
-    background: #E4E9ED;
-}
+    background: #e4e9ed;
+} */
 
 .smaller-text {
     margin-top: -1px;
@@ -82,7 +82,7 @@
 }
 
 .stars > i {
-    color: #03B077;
+    color: #03b077;
 }
 
 .ammenities {
@@ -90,18 +90,23 @@
     margin-top: 5px;
 }
 
-.ammenities > .chip {
+.small-chip {
+    height: 24px;
+    width: 58px;
+}
+
+/* .ammenities > .chip {
     padding: 13px;
     height: 24.5px;
     width: 57.56px;
     background: none;
     margin-right: 5px;
-}
+} */
 
-.ammenities .chip .chip-icon > .smaller-text {
+/* .ammenities .chip .chip-icon > .smaller-text {
     margin-top: -4px;
 }
 
 .chip-icon > span {
     padding: 2px;
-}
+} */
