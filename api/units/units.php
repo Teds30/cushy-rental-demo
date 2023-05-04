@@ -17,7 +17,7 @@ function units_index()
 function units_show($id)
 {
     $sql = "SELECT * FROM `cr_units` WHERE id = '$id'";
-    $res = db_query($sql, "No unit found with an id of $id.");
+    $res = db_queryOnce($sql, "No unit found with an id of $id.");
 
     return $res;
 }
