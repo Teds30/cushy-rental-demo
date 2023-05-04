@@ -1,0 +1,128 @@
+.nav {
+    z-index: 1;
+}
+
+.filter {
+    display: flex;
+    padding-left: 30px;
+    position: relative;
+    top: 81px;
+}
+
+.filtr-location {
+    width: 100px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent);
+}
+
+.filtr-location .title {
+    color: var(--accent);
+}
+
+.filter-filter {
+     width: 100px;
+     text-align: center;
+}
+
+.filter-filter .title {
+    color: var(--fc-body);
+}
+
+.location-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 100px;
+    padding: 0 11px 35px 11px;
+    display: none;
+}
+
+.search_location, .location_radius, .map {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 25px;
+    background: var(--bg-layer1);
+    border: 1px solid #E0E4F5;
+    box-shadow: 0px 0px 4px rgba(224, 228, 245, 0.25);
+    border-radius: 8px;
+}
+
+.search_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    gap: 17px;
+}
+
+.search_position_location, .location_radius_meters {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    padding: 0 0;
+}
+
+.chip {
+    flex-direction: row;
+    gap: 1px;
+    padding: 0 8px;
+    height: 31px;
+    border: 1px solid #8A93A6;
+}
+
+.location_radius_title, .map_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.location_radius_meters, .map_zone, .map_inter {
+    padding-top: 12px;
+}
+
+.location_radius_meters > form {
+    gap: 16px;
+}
+
+.map_zone {
+    display: flex;
+}
+
+.map_inter {
+    display: flex;
+    flex-direction: column;
+}
+
+.map_map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 536px;
+    border: 1px solid var(--fc-body);
+}
+.filter-container {
+    border: 2px solid yellow;
+    position: relative;
+    top: 85px;
+    display: block;
+}

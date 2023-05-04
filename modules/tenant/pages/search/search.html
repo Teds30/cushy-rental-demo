@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="../../../../css/index.css">
+
+     <!-- Manage Unit -->
+     <link rel="stylesheet" href="../../../../css/manage_units/index.css">
+
+    <link rel="stylesheet" href="../../css/search/search.css">
+</head>
+<body>
+    
+    <nav class="nav">
+
+        <div class="nav-back">
+
+            <a href="#">
+
+                <i class="bi bi-chevron-left"></i>
+
+            </a>
+
+        </div>
+
+        <div class="nav-title">
+
+            <h2 class="title">Search</h2>
+            
+        </div>
+
+    </nav>
+
+    <div class="filter">
+
+        <div class="filtr-location" id="location_bottom">
+
+            <button class="title" onclick="func_filter(1)" id="location_btn">LOCATION</button>
+
+        </div>
+
+        <div class="filter-filter" id="filter_bottom">
+            
+            <button class="title" onclick="func_filter(2)" id="filter_btn">FILTER</button>
+
+        </div>
+
+    </div>
+
+    <div class="location-container" id="location">
+
+        <div class="search_location">
+
+            <div class="search_title">
+
+                <i class="bi bi-geo-alt" style="font-size: 24px; color: var(--fc-body)"></i>
+                <h2 class="title" style="font-size: 16px; font-weight: 400; color: var(--fc-body)";>Search locations</h2>
+
+            </div>
+
+            <div class="search_position">
+
+                <div class="search_by">
+
+                    <p class="smaller-text" style="font-size: 14px;">Seach By:</p>
+
+                </div>
+
+                <div class="search_position_location">
+
+                    <form >
+
+                        <button type="submit">
+
+                            <div class="chip" id="chip_location_border">
+    
+                                <div class="chip_icon">
+        
+                                    <i class="bi bi-geo-alt" style="font-size: 14px;" id="chip_location_bo"></i>
+        
+                                </div>
+        
+                                <span class="smaller-text" style="font-size: 12px;;">Location</span>
+        
+                            </div>
+    
+                        </button>
+    
+                        <button type="submit">
+    
+                            <div class="chip">
+    
+                                <div class="chip_icon">
+        
+                                    <i class="fa-sharp fa-solid fa-building-columns"></i>
+                                        
+        
+                                </div>
+        
+                                <span class="smaller-text" style="font-size: 12px;">Institution</span>
+        
+                            </div>
+    
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="location_radius">
+
+            <div class="location_radius_title">
+
+                <h2 class="title" style="font-size: 16px; font-weight: 400; color: var(--fc-body)">Radius</h2>
+
+            </div>
+
+            <div class="location_radius_meters">
+
+                <form >
+
+                    <button type="submit">
+
+                        <div class="chip" id="chip_location_border">
+    
+                            <span class="smaller-text" style="font-size: 12px;;">500 Meters</span>
+    
+                        </div>
+
+                    </button>
+
+                    <button type="submit">
+
+                        <div class="chip">
+    
+                            <span class="smaller-text" style="font-size: 12px;">1 Kilometers</span>
+    
+                        </div>
+
+                    </button>
+
+                    <button type="submit">
+
+                        <div class="chip">
+
+                            <span class="smaller-text" style="font-size: 12px;">2 Kilometers</span>
+
+                        </div>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="map">
+
+            <div class="map_title">
+
+                <i class="bi bi-map" style="font-size: 24px; color: var(--fc-body)"></i>
+                <h2 class="title" style="font-size: 16px; font-weight: 400; color: var(--fc-body)";>Map</h2>
+
+            </div>
+
+            <div class="map_zone">
+
+                <form >
+
+                    <button type="submit">
+
+                        <div class="chip" id="chip_location_border">
+                            
+                            <div class="chip_icon">
+        
+                                <i class="bi bi-geo-alt" style="font-size: 14px;" id="chip_location_bo"></i>
+    
+                            </div>
+
+                            <span class="smaller-text" style="font-size: 12px;;">Show Location Zone</span>
+    
+                        </div>
+
+                    </button>
+
+                </form>
+
+                <button>
+
+                    <div class="chip" style="border: none;" id="chip_location_border">
+                        
+                        <div class="chip_icon">
+    
+                            <i class="bi bi-info-circle" style="font-size: 20px;" id="chip_location_bo"></i>
+
+                        </div>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="map_inter">
+
+                <div class="map_map">
+                    map here...
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="search_button">
+            <button class="btn btn-fill btn-primary">
+                Search
+            </button>
+        </div>
+    
+    </div>
+
+    <div class="filter-container" id="filter">
+        
+    </div>
+
+    <!-- javaScript Function -->
+    <script>
+
+        const func_filter = (num) => {
+            
+            if (num == 1) {
+
+                // it display the div for filter
+                document.getElementById("filter").style.display = "none";
+                document.getElementById("location").style.display = "block";
+
+                // This is for the color od the text
+                document.getElementById("location_bottom").style.borderBottom = "2px solid var(--accent)";
+                document.getElementById("location_btn").style.color = "var(--accent)";
+
+                // This is for the border-bottom
+                document.getElementById("filter_bottom").style.borderBottom = "none";
+                document.getElementById("filter_btn").style.color = "var(--fc-body)";
+
+            } else {
+                
+                // it display the div for filter
+                document.getElementById("location").style.display = "none";
+                document.getElementById("filter").style.display = "block";
+
+                // This is for the color od the text
+                document.getElementById("filter_bottom").style.borderBottom = "2px solid var(--accent)";
+                document.getElementById("filter_btn").style.color = "var(--accent)";
+
+                // This is for the border-bottom
+                document.getElementById("location_bottom").style.borderBottom = "none";
+                document.getElementById("location_btn").style.color = "var(--fc-body)";
+
+            }
+
+          };
+
+    </script>
+</body>
+</html>
