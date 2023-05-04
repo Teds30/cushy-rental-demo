@@ -35,10 +35,10 @@
     gap: 20px;
     top: 100px;
     padding: 0 11px 35px 11px;
-    display: none;
+    /* display: none; */
 }
 
-.search_location, .location_radius, .map {
+.search_location, .location_radius, .map, .boarders, .price_range, .rating, .quantity {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -65,7 +65,7 @@
     gap: 17px;
 }
 
-.search_position_location, .location_radius_meters {
+.search_position_location, .location_radius_meters, .rating_star {
     display: flex;
     justify-content: center;
 }
@@ -88,7 +88,7 @@ button {
     border: 1px solid #8A93A6;
 }
 
-.location_radius_title, .map_title {
+.location_radius_title, .map_title, .boarder_title, .price_range_title, .rating_title, .quantity_title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -96,7 +96,7 @@ button {
     border-bottom: 1px solid var(--border-color);
 }
 
-.location_radius_meters, .map_zone, .map_inter {
+.location_radius_meters, .map_zone, .map_inter, .boarders_available {
     padding-top: 12px;
 }
 
@@ -123,6 +123,35 @@ button {
 .filter-container {
     border: 2px solid yellow;
     position: relative;
-    top: 85px;
-    display: block;
+    top: 100px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 11px 35px 11px;
+}
+
+.boarders_available form button > .chip {
+    background: var(--bg-layer4);
+    padding: 8px 20px;
+    gap: 4px;
+}
+
+.boarders_available > form {
+    gap: 3px;
+}
+
+.rating_star {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.star {
+    display: flex;
+    gap: 11px;
+}
+
+.star > i {
+    font-size: 28px;
+    color: var(--accent);
 }
