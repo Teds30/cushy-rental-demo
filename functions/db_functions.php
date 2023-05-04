@@ -26,6 +26,28 @@ function db_query($sql = '', $msg)
     return $out;
 }
 
+function db_queryOnce($sql = '', $msg)
+{
+    $con = connection();
+
+    $res = $con->query($sql) or die($con->error);
+
+    $data = null;
+    $out = null;
+
+    $data = $res->fetch_assoc();
+
+    $out['data'] = $data;
+    $out['msg'] = '';
+
+    if (!$data) $out['msg'] = $msg;
+
+    // for postman testing
+    // echo json_encode($out);
+
+    return $out;
+}
+
 function db_nonquery($sql = '', $msg = '', $is_insert = false)
 {
     $con = connection();
