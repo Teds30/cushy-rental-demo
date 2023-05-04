@@ -79,6 +79,8 @@ img {
 
 .recommended-section {
     position: relative;
+    flex-direction: column;
+    display: flex;
     top: 430px;
     width: 100%;
 }
@@ -89,17 +91,22 @@ img {
 }
 
 .recommended-lists {
-    display: flex;  
+    display: flex;
     justify-content: space-between;
-    margin: 10px 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 12px 12px 12px;
 }
 
 .recommended-lists-item {
-    position: relative;
-    width: 165px;
     background: var(--bg-layer1);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.recommended-lists-item > a {
+    text-decoration: none;
 }
 
 .image {
@@ -119,6 +126,13 @@ img {
 
 .title-price {
     position: relative;
+    margin: 8px 8px;
+}
+
+.title-price > .smaller-text {
+    font-size: 10px;
+    font-weight: 400;
+    margin:  0 0 0 0;
 }
 
 .title-price .book-mark {
@@ -127,71 +141,79 @@ img {
     right: 0;
 }
 
+.book-mark  button  {
+    padding: 0 0;
+}
+
 .title-price .book-mark i {
     color: var(--accent);
 }
 
-.title-price, .ratings {
-    margin: 8px 8px 0 8px;
-}
-
-s.title-price .pre-title {
-    font-family: 'Inter';
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
 .ratings {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin: 0 8px;
+    padding: 5px;
     border-top: 0.5px solid var(--border-color);
     border-bottom: 0.5px solid var(--border-color);
 }
 
-.ratings >.pre-title {
-    line-height: normal;
-    font-size: 8px;
-    font-family: 'Inter';
-    margin-top: 14px;
-    line-height: 0;
+.ratings > .smaller-text {
+    font-size: 10px;
+    margin:  0 0 0 0;
+    font-weight: 600;
 }
 
-.ratings .stars > i {
+.ratings .stars {
+    margin-top: -7  px;
+}
+
+.stars > i {
     font-size: 10px;
     font-weight: 600;
     color: var(--accent);
+    margin-top: -100px;
+}
+
+.ammenities-container {
+    display: flex;
+    padding: 8px;
 }
 
 .ammenities {
+    flex: 3;
     display: flex;
-    /* height: 100px; */
-    padding-bottom: 8px;
-    margin: 8px 8px;
 }
 
 .ammenities .chip {
-    width: 45px;
+    gap: 0;
     height: 16px;
-    margin-right: 3px;
+    padding: 10px 3px 10px 0;
 }
 
-.ammenities .chip .chip-icon span {
-    /* padding: 1px; */
-    margin-left: 1px;
+.ammenities  .chip-icon {
+    gap: 0;
+    padding: 0 0 0 0;
+    justify-content: 0;
 }
 
-.ammenities .chip .chip-icon svg {
-    margin-top: -5px;
+.ammenities .chip-icon > i {
+    font-size: 10px;
+    color: var(--fc-body);
+    border-radius: 50%;
+    background: var(--border-color);
+    padding: 2px;
 }
 
-.ammenities .chip .chip-icon .pre-title {
-    font-size: 8px;
-    font-family: 'Inter';
+.more .chip {
+    gap: 0;
+    height: 16px;
+    padding: 10px 3px 10px 0;
 }
 
-.more {
-    display: flex;
-    justify-content: end;
-    flex: 2;
+.more  .chip-icon {
+    gap: 0;
+    padding: 0 0 0 0;
+    justify-content: 0;
 }
-
