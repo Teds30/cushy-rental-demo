@@ -66,7 +66,9 @@ $selected = 'manage_users';
                                 <td>Landlord</td>
                                 <td>+639123456789</td>
                                 <td>VERIFIED</td>
-                                <td> <a href="" class="link">Manage</a> </td>
+                                <td>
+                                    <div class="td-center"><a href="" class="link">Manage</a></div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
