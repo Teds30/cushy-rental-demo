@@ -18,7 +18,7 @@
     --accent-lightest: #c6f6e7;
 
     --accent-danger: #eb5858;
-    --accent-danger-light: #eb585822;
+    --accent-danger-light: #eb58580a;
 
     --bg: #f4f6f9;
     --bg-layer1: #fff;
@@ -162,6 +162,18 @@ button {
     /* border: 1px solid red; */
 }
 
+.btn-danger {
+    color: var(--accent-danger);
+}
+.btn-danger:hover {
+    background-color: var(--accent-danger-light);
+}
+
+.btn-danger-tinted {
+    color: var(--accent-danger);
+    background-color: var(--accent-danger-light);
+}
+
 .btn span {
     display: flex;
     justify-content: center;
@@ -266,11 +278,11 @@ input:focus {
 }
 
 .custom__inputs input:valid + span {
-    transform: scale(calc(10 / 12)) translateY(-18px);
+    transform: scale(calc(10 / 12)) translateY(-14px);
 }
 
 .custom__inputs input:valid {
-    padding-top: 20px;
+    padding-top: 24px;
     font-size: 14px;
 }
 
