@@ -489,6 +489,7 @@ a.link {
 }
 
 .chip-icon {
+    color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,9 +497,16 @@ a.link {
     height: auto;
 }
 .chip-icon i {
+    color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.chip-selected {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    background: #03b0770a;
 }
 
 .subs-card {
