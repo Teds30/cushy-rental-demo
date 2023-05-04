@@ -6,7 +6,10 @@ $selected = 'manage_units';
 include '../../../api/units/units.php';
 $q_units = units_index();
 $units = $q_units['data'];
-$msg = $q_units['msg'];
+
+include '../../../api/users/users.php';
+$q_users = users_index();
+$users = $q_users['data'];
 
 
 ?>
@@ -65,27 +68,62 @@ $msg = $q_units['msg'];
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($units as $unit) : ?>
                                 <tr>
                                     <td>
                                         <div class="td-picture-container">
                                             <div class="td-picture-box"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt=""></div>
                                             <div class="td-picture-content">
-                                                <p class="title">Tya Els Boarding House</p>
-                                                <p>Tya Els</p>
+                                                <p class="title"><?= $unit['name'] ?></p>
+                                                <?php
+
+                                                $q_user = users_show($unit['landlord_id']);
+                                                $user = $q_user['data'];
+
+                                                ?>
+                                                <p><?= $user['first_name'] . ' ' . $user['last_name'] ?></p>
                                             </div>
                                         </div>
                                     </td>
-                                    <td>5,000</td>
+                                    <td><?= $unit['price'] ?></td>
                                     <td>Rawis, Legazpi City</td>
-                                    <td>4</td>
-                                    <td>NONE</td>
+                                    <td><?= $unit['slots'] ?></td>
+                                    <td><?= $unit['subscription_id'] != 0 ? $unit['subscription_id'] : 'NONE' ?></td>
                                     <td>
                                         <div class="td-center">
-                                            <div class="status-chip">LISTED</div>
+                                            <?php if ($unit['is_listed'] == 1) : ?>
+                                                <div class="status-chip status-chip-success">LISTED</div>
+                                            <?php elseif ($unit['is_listed'] == 0) : ?>
+                                                <div class="status-chip status-chip-pending">LISTED</div>
+                                            <?php endif ?>
                                         </div>
                                     </td>
-                                    <td> <a href="manage_unit_details.php?unit_id=1" class="link">Manage</a> </td>
+                                    <td>
+                                        <div class="td-center"> <a href="manage_unit_details.php?unit_id=<?= $unit['id'] ?>" class="link">Manage</a></div>
+                                    </td>
                                 </tr>
+                            <?php endforeach ?>
+                            <!-- <tr>
+                                <td>
+                                    <div class="td-picture-container">
+                                        <div class="td-picture-box"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt=""></div>
+                                        <div class="td-picture-content">
+                                            <p class="title">Tya Els Boarding House</p>
+                                            <p>Tya Els</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>5,000</td>
+                                <td>Rawis, Legazpi City</td>
+                                <td>4</td>
+                                <td>NONE</td>
+                                <td>
+                                    <div class="td-center">
+                                        <div class="status-chip status-chip-success">LISTED</div>
+                                    </div>
+                                </td>
+                                <td> <a href="manage_unit_details.php?unit_id=1" class="link">Manage</a> </td>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>
