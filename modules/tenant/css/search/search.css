@@ -35,21 +35,20 @@
     gap: 20px;
     top: 100px;
     padding: 0 11px 35px 11px;
-    /* display: none; */
 }
 
-.search_location, .location_radius, .map, .boarders, .price_range, .rating, .quantity {
+.search-location, .location-radius, .map, .boarders, .price-range, .rating, .quantity, .ammenities, .facilities, .inclusion, .rules {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 15px 25px;
     background: var(--bg-layer1);
-    border: 1px solid #E0E4F5;
+    border: 1px solid var(--border-color);
     box-shadow: 0px 0px 4px rgba(224, 228, 245, 0.25);
     border-radius: 8px;
 }
 
-.search_title {
+.search-title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -57,7 +56,7 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-.search_position {
+.search-position {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +64,16 @@
     gap: 17px;
 }
 
-.search_position_location, .location_radius_meters, .rating_star {
+.search-position-location, .location-radius-meters, .rating-star, .ammenities-list, .inclusion-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 form {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
@@ -88,7 +89,7 @@ button {
     border: 1px solid #8A93A6;
 }
 
-.location_radius_title, .map_title, .boarder_title, .price_range_title, .rating_title, .quantity_title {
+.location-radius-title, .map-title, .boarder-title, .price-range-title, .rating-title, .quantity-title, .ammenities-title, .facilities-title, .inclusion-title, .rules-title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -96,24 +97,24 @@ button {
     border-bottom: 1px solid var(--border-color);
 }
 
-.location_radius_meters, .map_zone, .map_inter, .boarders_available {
+.location-radius-meters, .map-zone, .map-inter, .boarders-available, .quantity-computation, .ammenities-list, .facilities-list, .inclusion-list, .rules-list {
     padding-top: 12px;
 }
 
-.location_radius_meters > form {
+.location-radius-meters > form {
     gap: 16px;
 }
 
-.map_zone {
+.map-zone {
     display: flex;
 }
 
-.map_inter {
+.map-inter {
     display: flex;
     flex-direction: column;
 }
 
-.map_map {
+.map-map {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +122,6 @@ button {
     border: 1px solid var(--fc-body);
 }
 .filter-container {
-    border: 2px solid yellow;
     position: relative;
     top: 100px;
     display: none;
@@ -130,28 +130,96 @@ button {
     padding: 0 11px 35px 11px;
 }
 
-.boarders_available form button > .chip {
+.rules-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boarders-available form button  .chip {
     background: var(--bg-layer4);
-    padding: 8px 20px;
+    padding: 8px 15px;
     gap: 4px;
 }
 
-.boarders_available > form {
-    gap: 3px;
+.boarders-available > form {
+    gap: 6px;
 }
 
-.rating_star {
+.rating-star {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 12px;
 }
 
 .star {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 11px;
 }
 
 .star > i {
     font-size: 28px;
     color: var(--accent);
+}
+
+.quantity-computation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-computation .chip {
+    height: 46px;
+    border-radius: 10px;
+}
+
+.input {
+    width: 100%;
+}
+
+.input input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.ammenities-list form {
+    gap: 10px;
+}
+
+.ammenities-list form button  .chip {
+    background: var(--bg-layer4);
+    padding: 8px 15px;
+    gap: 5px;
+}
+
+.facilities form {
+    gap: 10px;
+}
+
+.facilities-list form button  .chip {
+    background: var(--bg-layer4);
+    padding: 8px 15px;
+    gap: 5px;
+}
+
+.inclusion form {
+    gap: 10px;
+}
+
+.inclusion-list form button  .chip {
+    background: var(--bg-layer4);
+    padding: 8px 15px;
+    gap: 5px;
+}
+
+.rules-list button  .chip {
+    background: var(--bg-layer4);
+    padding: 8px 15px;
+    gap: 5px;
 }
