@@ -145,10 +145,6 @@ img {
     padding: 0 0;
 }
 
-.title-price .book-mark i {
-    color: var(--accent);
-}
-
 .ratings {
     display: flex;
     align-items: center;

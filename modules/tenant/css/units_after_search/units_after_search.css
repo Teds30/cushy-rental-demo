@@ -14,21 +14,21 @@
 
 .filter {
     display: flex;
+    gap: 15px;
 }
 
 .filter > a {
     text-decoration: none;
-    margin-right: 15px;
 }
 
-/* .chip {
-    width: 80px;
+.filter .chip {
     height: 30px;
-    background: #e4e9ed;
-} */
+    padding: 5px 14px;
+    gap: 0;
+}
 
-.smaller-text {
-    margin-top: -1px;
+.filter .chip .smaller-text {
+    font-size: 12px;
 }
 
 .main-content {
@@ -87,12 +87,22 @@
 
 .ammenities {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     margin-top: 5px;
 }
 
-.small-chip {
-    height: 24px;
-    width: 58px;
+.ammenities > .chip {
+    height: 25px;
+    gap: 0;
+}
+
+.ammenities .chip-icon > i {
+    font-size: 10px;
+    color: var(--fc-body);
+    padding: 3px;
+    background: var(--border-color);
+    border-radius: 50%;
 }
 
 /* .ammenities > .chip {

@@ -57,31 +57,47 @@
                     <div class="recommended-lists-item">
 
                         <a href="">
+
                             <div class="image">
                                 <img src="../../logo/images (4).jpeg" alt="">
                             </div>
+
                             <div class="title-price">
+
                                 <h2 class="title">PHP 5,0001</h2>
                                 <p class="smaller-text">Bentong Boarding House</p>
+
                                 <div class="book-mark">
+
                                     <form method="POST" action="#">
+
                                         <button type="submit">
-                                            <i class="bi bi-bookmark"></i>     
+
+                                            <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 23.3087V2.26711C0.5 1.28757 1.28705 0.5 2.25 0.5H15.75C16.7129 0.5 17.5 1.28757 17.5 2.26711V23.3087L9.25336 18.4615L9 18.3126L8.74664 18.4615L0.5 23.3087Z" fill="white" stroke="#03AF76"/>
+                                            </svg>
+
                                         </button>
+
                                     </form>
+
                                 </div>
+
                             </div>
                             <div class="ratings">
-                                <!-- <div> -->
+
                                 <p class="smaller-text">RATING</p>
-                                <!-- </div> -->
+
                                 <div class="stars">
+
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
+
                                 </div>
+                                
                             </div>
                             
                             <div class="ammenities-container">
@@ -97,11 +113,11 @@
            
                                 </div>
                                 <div class="more">
+
                                     <div class="chip">
-                                        <!-- <div class="chip-icon">
-                                        </div> -->
                                         <span class="pre-title" style="font-size: 8px;">+ 3 More</span>
                                     </div>
+
                                 </div>
         
                             </div>
@@ -111,85 +127,47 @@
                     <div class="recommended-lists-item">
 
                         <a href="">
+                            
                             <div class="image">
                                 <img src="../../logo/images (4).jpeg" alt="">
                             </div>
-                            <div class="title-price">
-                                <h2 class="title">PHP 5,0002</h2>
-                                <p class="smaller-text">Bentong Boarding House</p>
-                                <div class="book-mark">
-                                    <form method="POST" action="#">
-                                        <button type="submit">
-                                            <i class="bi bi-bookmark"></i>     
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="ratings">
-                                <!-- <div> -->
-                                <p class="smaller-text">RATING</p>
-                                <!-- </div> -->
-                                <div class="stars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="ammenities-container">
-        
-                                <div class="ammenities">
-        
-                                    <div class="chip">
-                                       <div class="chip-icon">
-                                           <i class="bi bi-wifi"></i>
-                                       </div>
-                                       <span class="pre-title" style="font-size: 8px;">WiFi</span>
-                                   </div>
-           
-                                </div>
-                                <div class="more">
-                                    <div class="chip">
-                                        <!-- <div class="chip-icon">
-                                        </div> -->
-                                        <span class="pre-title" style="font-size: 8px;">+ 3 More</span>
-                                    </div>
-                                </div>
-        
-                            </div>
-                        </a>
-    
-                    </div>
-                    <div class="recommended-lists-item">
 
-                        <a href="">
-                            <div class="image">
-                                <img src="../../logo/images (4).jpeg" alt="">
-                            </div>
                             <div class="title-price">
-                                <h2 class="title">PHP 5,0003</h2>
+
+                                <h2 class="title">PHP 5,0001</h2>
                                 <p class="smaller-text">Bentong Boarding House</p>
+
                                 <div class="book-mark">
+
                                     <form method="POST" action="#">
+
                                         <button type="submit">
-                                            <i class="bi bi-bookmark"></i>     
+
+                                            <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.5 23.3087V2.26711C0.5 1.28757 1.28705 0.5 2.25 0.5H15.75C16.7129 0.5 17.5 1.28757 17.5 2.26711V23.3087L9.25336 18.4615L9 18.3126L8.74664 18.4615L0.5 23.3087Z" fill="white" stroke="#03AF76"/>
+                                            </svg>
+
                                         </button>
+
                                     </form>
+
                                 </div>
+
                             </div>
                             <div class="ratings">
-                                <!-- <div> -->
+
                                 <p class="smaller-text">RATING</p>
-                                <!-- </div> -->
+
                                 <div class="stars">
+
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
+
                                 </div>
+                                
                             </div>
                             
                             <div class="ammenities-container">
@@ -205,11 +183,11 @@
            
                                 </div>
                                 <div class="more">
+
                                     <div class="chip">
-                                        <!-- <div class="chip-icon">
-                                        </div> -->
                                         <span class="pre-title" style="font-size: 8px;">+ 3 More</span>
                                     </div>
+
                                 </div>
         
                             </div>
