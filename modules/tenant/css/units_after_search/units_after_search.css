@@ -14,21 +14,21 @@
 
 .filter {
     display: flex;
+    gap: 15px;
 }
 
 .filter > a {
     text-decoration: none;
-    margin-right: 15px;
 }
 
-.chip {
-    width: 80px;
+.filter .chip {
     height: 30px;
-    background: #E4E9ED;
+    padding: 5px 14px;
+    gap: 0;
 }
 
-.smaller-text {
-    margin-top: -1px;
+.filter .chip .smaller-text {
+    font-size: 12px;
 }
 
 .main-content {
@@ -82,26 +82,41 @@
 }
 
 .stars > i {
-    color: #03B077;
+    color: #03b077;
 }
 
 .ammenities {
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     margin-top: 5px;
 }
 
 .ammenities > .chip {
+    height: 25px;
+    gap: 0;
+}
+
+.ammenities .chip-icon > i {
+    font-size: 10px;
+    color: var(--fc-body);
+    padding: 3px;
+    background: var(--border-color);
+    border-radius: 50%;
+}
+
+/* .ammenities > .chip {
     padding: 13px;
     height: 24.5px;
     width: 57.56px;
     background: none;
     margin-right: 5px;
-}
+} */
 
-.ammenities .chip .chip-icon > .smaller-text {
+/* .ammenities .chip .chip-icon > .smaller-text {
     margin-top: -4px;
 }
 
 .chip-icon > span {
     padding: 2px;
-}
+} */
