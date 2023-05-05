@@ -13,10 +13,11 @@
 
 .camera-icon {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  left: 192px;
-  top: 194px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  top: 140px;
+  left: 30px;
 }
 
 .header {
