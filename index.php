@@ -29,6 +29,22 @@
     <p>Strive to maintain a minimum font size that most people can read easily. Differences in device displays, including pixel density and brightness, can influence the appropriate minimum font size. Other factors — such as the reader’s proximity to the display, their eyesight and whether they’re in motion, and environmental lighting conditions — all impact legibility.</p>
 
     <br>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <div class="stepper stepper-borderless">
+        <div class="input-group-prepend">
+            <button class="stepper-btn stepper-btn-minus">
+                <i class="fa fa-minus"></i>
+            </button>
+        </div>
+        <input class="form-control stepper-input" min="0" name="quantity" value="1" type="number">
+        <div class="input-group-append">
+            <button class="stepper-btn stepper-btn-plus">
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    <script src="/cr_demo/js/stepper.js"></script>
     <h2>Font Family</h2>
     <div class="card">
         <h2>Inter</h2>
@@ -39,6 +55,10 @@
     <hr>
     <br>
     <h1>Colors</h1>
+
+    <div class="quantity-container">
+        input
+    </div>
 
     <div class="colors">
         <div class="box t1"></div>
