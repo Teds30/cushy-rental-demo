@@ -59,7 +59,7 @@ h2 {
 .box-2_container {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 12px;
   gap: 12px;
   background: #1d6156;
   border-radius: 16px;

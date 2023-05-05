@@ -15,11 +15,9 @@
 <body>
     <div class="header-container">
         <div class="header">
-            <div class="nav-back">
-                <a href="#">
-                    <i class="bi bi-chevron-left"></i>
-                </a>
-            </div>
+            <a href="../../landlord/pages/profile_page.php" class="chevron-btn">
+                <i class="bi bi-chevron-left"></i>
+            </a>
             <p>My Unit</p>
         </div>
     </div>
@@ -56,7 +54,7 @@
             </div>
         </a>
 
-        <div class="box-2_container">
+        <a href="#" class="btn-link box-2_container">
             <div class="box-2">
 
                 <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +67,7 @@
 
                 <p>MANAGE UNITS</p>
             </div>
-        </div>
+        </a>
 
     </div>
 </body>

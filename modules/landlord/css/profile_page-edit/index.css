@@ -1,9 +1,23 @@
-.background-img {
-  z-index: -1;
+.background-img-top {
+  height: 50px;
+  background-color: #1d6156;
+}
+.background-img_container {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
   width: 100%;
-  left: 0px;
-  top: -50px;
+  height: fit-content;
+}
+.background-img svg {
+  /* border: 1px solid red; */
+  height: 100px;
+  width: 100%;
 }
 
 .chevron-btn {
@@ -17,7 +31,7 @@
   width: 100%;
   z-index: 2;
   top: 140px;
-  left: 30px;
+  left: 35px;
 }
 
 .header {
@@ -46,8 +60,7 @@
   height: 84px;
   object-fit: cover;
   border-radius: 50%;
-  padding: 5px;
-  border: 5px solid #f4f6f9;
+  border: 1px solid #f4f6f9;
 }
 
 .profile-details {
@@ -81,7 +94,7 @@
   flex-direction: column;
   padding: 0px;
   gap: 16px;
-  padding: 60px 45px 0px 45px;
+  padding: 60px 45px 45px 45px;
   width: 100%;
 }
 
