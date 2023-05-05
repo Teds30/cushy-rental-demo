@@ -29,9 +29,8 @@
     <p>Strive to maintain a minimum font size that most people can read easily. Differences in device displays, including pixel density and brightness, can influence the appropriate minimum font size. Other factors — such as the reader’s proximity to the display, their eyesight and whether they’re in motion, and environmental lighting conditions — all impact legibility.</p>
 
     <br>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-
-    <div class="stepper stepper-borderless">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class="stepper">
         <div class="input-group-prepend">
             <button class="stepper-btn stepper-btn-minus">
                 <i class="fa fa-minus"></i>
