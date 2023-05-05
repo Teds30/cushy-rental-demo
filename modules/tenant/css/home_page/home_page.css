@@ -79,8 +79,8 @@ img {
 
 .recommended-section {
     position: relative;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     top: 430px;
     width: 100%;
 }
@@ -94,8 +94,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 12px;
     width: 100%;
-    padding: 0 12px 12px 12px;
 }
 
 .recommended-lists-item {
@@ -180,6 +180,7 @@ img {
 .ammenities {
     flex: 3;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .ammenities .chip {
@@ -192,6 +193,7 @@ img {
     gap: 0;
     padding: 0 0 0 0;
     justify-content: 0;
+    font-family: 'Inter';
 }
 
 .ammenities .chip-icon > i {
@@ -212,4 +214,5 @@ img {
     gap: 0;
     padding: 0 0 0 0;
     justify-content: 0;
+    font-family: 'Inter';
 }
