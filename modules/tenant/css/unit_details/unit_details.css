@@ -1,0 +1,484 @@
+nav {
+    padding: 12px;
+    z-index: 1;
+}
+
+p {
+    font-family: 'Inter';
+}
+
+.book-mark i {
+    font-size: 24px;
+}
+
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 61px 0 0 0;
+}
+
+.content-photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 249px;
+}
+
+.carouselExampleAutoplaying {
+    position: absolute;
+    top: 0;
+}
+
+.carousel-inner img {
+    height: 246px;
+}
+
+.content {
+    position: relative;
+    top: -25px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 20px;
+}
+
+.content-title, .ammenities, .facilities, .unit-rules, .payment-inclusions {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.stars > i {
+    color: var(--accent);
+}
+
+.unit-view-map, .target-gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.unit-address {
+    display: flex;
+    align-items: center;
+}
+
+.target-gender-icon .chip-icon {
+    gap: 2px;
+}
+
+.target-gender-title .title {
+    margin: 0 0 0 0;
+}
+
+.target-gender-icon .chip {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 27px;
+    border-radius: 10px;
+}
+
+.description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 30px 15px;
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.description-view-more {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.unit-reviews {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.reviews .carousel .carousel-item a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+    gap: 8px;
+}
+
+.user-photo > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-name {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.user-review {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-review .smaller-text {
+    text-align: justify;
+}
+
+.carousel button {
+    filter: blur(10px);
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.review-more {
+    display: flex;
+    align-items: center;
+}
+
+.review-more .btn-fill {
+    border-radius: 10px;
+}
+
+.ammenities-list, .facilities-list, .payment-inclusions-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.payment-inclusions-list .chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    padding: 4px 9px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.payment-inclusions-list {
+    display: flex;
+    justify-content: center;
+}
+
+.recommended-lists {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    width: fit-content;
+}
+
+.recommended-lists-item {
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.recommended-lists-item > a {
+    text-decoration: none;
+}
+
+.image {
+    position: relative;
+    width: 165px;
+    height: 123px;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 123px;
+    border-radius: 10px 10px 0 0;
+}
+
+.title-price {
+    position: relative;
+    margin: 8px 8px;
+}
+
+.title-price > .smaller-text {
+    font-size: 10px;
+    font-weight: 400;
+    margin:  0 0 0 0;
+}
+
+.title-price .book-mark {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.book-mark  button  {
+    padding: 0 0;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8px;
+    padding: 5px;
+    border-top: 0.5px solid var(--border-color);
+    border-bottom: 0.5px solid var(--border-color);
+}
+
+.ratings > .smaller-text {
+    font-size: 10px;
+    margin:  0 0 0 0;
+    font-weight: 600;
+}
+
+.ratings .stars {
+    margin-top: -10px;
+}
+
+.stars > i {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: -100px;
+}
+
+.ammenities-container {
+    display: flex;
+    padding: 8px;
+}
+
+.ammenity {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ammenity .chip {
+    gap: 0;
+    height: 16px;
+    padding: 10px 3px 10px 0;
+}
+
+.ammenity  .chip-icon {
+    gap: 0;
+    padding: 0 0 0 0;
+    justify-content: 0;
+    font-family: 'Inter';
+}
+
+.ammenity .chip-icon > i {
+    font-size: 10px;
+    color: var(--fc-body);
+    border-radius: 50%;
+    background: var(--border-color);
+    padding: 2px;
+}
+
+.more .chip {
+    gap: 0;
+    height: 16px;
+    padding: 10px 3px 10px 0;
+}
+
+.more  .chip-icon {
+    gap: 0;
+    padding: 0 0 0 0;
+    justify-content: 0;
+    font-family: 'Inter';
+}
+
+.units {
+    display: flex;
+    justify-content: center;
+}
+
+.units .carousel-item a {
+    text-decoration: none;
+    width: fit-content;
+}
+
+.reviews-section {
+    display: none;
+    flex-direction: column;
+    padding: 0 15px;
+    border-radius: 10px 10px 0 0;
+    position: sticky;
+    bottom: 0;
+    height: 500px;
+    width: 100%;
+    background: var(--bg);
+}
+
+.reviews-section nav {
+    position: absolute;
+    top: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 0 0 12px 0;
+    z-index: 1;
+}
+
+.main-reviews {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 65px;
+    font-style: 'Inter';
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.reviews-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-icons {
+    display: flex;
+    gap: 5px;
+    overflow-x: scroll;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comments-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: var(--bg-layer1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.users-rate {
+    display: flex;
+    gap: 5px;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+
+.comments-item .user-name h2 {
+    margin: 0 0 0 0;
+    gap: 0;
+}
+
+.user-name .rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.user-name .rate .stars {
+    position: relative;
+    top: -3.5px;
+}
+
+.comments {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.environemt {
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.rates-to-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.types {
+    display: flex;
+    /* flex-direction: ; */
+}
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.types .stars {
+    position: relative;
+    top: -5px;
+    padding-right: 80px;
+}
+
+.types .stars i {
+    padding-right: 10px;
+}
+ 
+.nav-bottom {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    gap: 7px;
+}
+
+.nav-bottom a {
+    flex: 1;
+}
+
+.nav-bottom .call {
+    border-color: var(--accent);
+    color: var(--accent);
+    border-radius: 4px;
+}
