@@ -56,7 +56,7 @@ include '.././../../functions/path.php';
                             BRONZE
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
-                        <a class="link">
+                        <a class="link" href="manage_subscription.php?subscription=bronze">
                             View Details
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">

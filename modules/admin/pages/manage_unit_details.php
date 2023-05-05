@@ -3,6 +3,29 @@
 
 $selected = 'manage_units';
 
+$unit_id = $_GET['unit_id'];
+
+
+include '../../../api/units/units.php';
+$q_unit = units_show($unit_id);
+$unit = $q_unit['data'];
+
+include '../../../api/users/users.php';
+$q_user = users_show($unit['landlord_id']);
+$user = $q_user['data'];
+
+$q_amenities = unit_amenities($unit_id);
+$amenities = $q_amenities['data'];
+
+$q_facilities = unit_facilities($unit_id);
+$facilities = $q_facilities['data'];
+
+$q_rules = unit_rules($unit_id);
+$rules = $q_rules['data'];
+
+
+include '../../../api/amenities/amenities.php';
+
 ?>
 
 <html lang="en">
@@ -34,18 +57,18 @@ $selected = 'manage_units';
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M9 6l6 6l-6 6"></path>
                             </svg></span>
-                        <span>Tya Els Boarding House</span>
+                        <span><?= $unit['name'] ?></span>
                     </div>
                 </div>
 
                 <div class="unit-container">
 
                     <div class="unit-intro">
-                        <p class="unit-price">PHP 5,000</p>
-                        <h1 class="unit-title">Tya Els Boarding House</h1>
+                        <p class="unit-price">PHP <?= number_format($unit['price']) ?></p>
+                        <h1 class="unit-title"><?= $unit['name'] ?></h1>
                         <div class="user-info">
                             <div class="user-info-pic"><img src="/cr_demo/assets/images/accounts/user1/user1.png" alt=""></div>
-                            <p class="title">Tya Els</p>
+                            <p class="title"><?= $user['first_name'] . ' ' . $user['last_name'] ?></p>
                             •
                             <p>created on April 4, 2023 </p>
                         </div>
@@ -68,7 +91,7 @@ $selected = 'manage_units';
 
                     <div class="unit-section">
                         <p class="title">Details</p>
-                        <p>Renowned for their pan- African presence and with a reputation for delivering world-class Digital CustorT Experience and Technology Services, DSC's impact.</p>
+                        <p><?= $unit['details'] ?></p>
                     </div>
                     <div class="unit-section">
                         <p class="title">Gender</p>
