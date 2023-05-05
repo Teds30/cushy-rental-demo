@@ -1,39 +1,13 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-body {
-  font-family: "Inter";
-  position: relative;
-  width: 360px;
-  height: 800px;
-  background: #f4f6f9;
-}
 p {
   color: white;
 }
 
-#logo_img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 29px;
-  top: 16px;
-}
-
 h2 {
-  position: absolute;
-  width: 182px;
-  height: 40px;
-  left: 114px;
-  top: 46px;
-  font-family: "PT Serif";
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  /* identical to box height */
 
   background: linear-gradient(90deg, #03b077 -2.06%, #7ab73d 104.45%);
   -webkit-background-clip: text;
@@ -41,17 +15,18 @@ h2 {
   background-clip: text;
 }
 
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-box_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 0px 12px;
   gap: 24px;
-  position: absolute;
-  width: 360px;
-  height: 583px;
-  left: 0px;
-  top: 108px;
+  width: 100%;
 }
 
 .sub-box_container {
@@ -60,55 +35,44 @@ h2 {
   align-items: flex-start;
   padding: 0px 0px 12px;
   gap: 10px;
-  width: 336px;
-  height: 386px;
+  width: 100%;
 }
 
 .box-1_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
   padding: 0px;
   gap: 12px;
   margin-top: 43px;
-  width: 336px;
-  height: 223px;
   background: #1d6156;
   border-radius: 16px;
+}
+
+.top-inner-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  width: 100%;
 }
 
 .box-2_container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 0px;
   gap: 12px;
-  width: 336px;
-  height: 141px;
   background: #1d6156;
   border-radius: 16px;
+  width: 100%;
 }
 
 .top-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 18px;
+  padding: 6px 0px 30px 6px;
   gap: 12px;
-
-  width: 100px;
-  height: 86px;
-}
-
-.top {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 12px;
-
-  width: 98px;
-  height: 50px;
+  width: 100%;
 }
 
 .gradient {
@@ -129,6 +93,7 @@ h2 {
 .blue-box {
   background: #5171e5;
 }
+
 .gradient-icon {
   position: absolute;
   top: 12px;
@@ -154,46 +119,45 @@ h2 {
   align-items: center;
 }
 
+.top-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .top-text-1 {
-  width: 35px;
-  height: 19px;
-
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 17px;
+  width: 100%;
 }
 
 .top-text-2 {
-  width: 36px;
-  height: 19px;
-
-  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 19px;
+  width: 100%;
 }
 
 .inner-items_container {
-  width: 316px;
-  height: 70px;
+  display: flex;
   padding: 12px;
   background: #ffffff;
   border-radius: 6px;
-  margin: 0px 10px;
+  justify-content: center;
+  width: 100%;
 }
 
 .inner-items_sub {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 12px;
   padding: 0px;
-  width: 292px;
-  height: 46px;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-evenly;
   text-align: center;
 }
 
@@ -205,7 +169,7 @@ h2 {
   align-items: center;
   padding: 12px 24px;
   gap: 4px;
-  width: 336px;
+  width: 100%;
   height: 43px;
   border-top: 1px solid #e0e4f5;
 }
@@ -216,9 +180,6 @@ h2 {
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height, or 136% */
-
-  /* border */
   color: #e0e4f5;
 }
 
@@ -234,13 +195,11 @@ h2 {
   padding: 0px;
   gap: 19px;
   margin-top: 24px;
-  width: 336px;
-  height: 130px;
+  width: 100%;
 }
 
 .bottom-box_container > p {
-  width: 200px;
-  height: 17px;
+  display: flex;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -258,10 +217,10 @@ h2 {
   align-items: flex-start;
   padding: 12px;
   gap: 16px;
-  width: 336px;
-  height: 94px;
+  width: 100%;
   background: #ffffff;
   border-radius: 16px;
+  margin-bottom: 106px;
 }
 
 .content-1 {
@@ -280,6 +239,7 @@ h2 {
 .right-side {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .content-1_txt {
@@ -303,7 +263,7 @@ h2 {
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  width: 180px;
+  width: 100%;
 }
 .content-2_txt {
   font-style: normal;
@@ -326,6 +286,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 .content-3_txt {
   font-style: normal;
