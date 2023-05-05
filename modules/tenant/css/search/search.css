@@ -86,7 +86,6 @@ button {
     gap: 1px;
     padding: 0 8px;
     height: 31px;
-    border: 1px solid #8A93A6;
 }
 
 .location-radius-title, .map-title, .boarder-title, .price-range-title, .rating-title, .quantity-title, .ammenities-title, .facilities-title, .inclusion-title, .rules-title {
@@ -138,7 +137,6 @@ button {
 }
 
 .boarders-available form button  .chip {
-    background: var(--bg-layer4);
     padding: 8px 15px;
     gap: 4px;
 }
@@ -193,7 +191,6 @@ button {
 }
 
 .ammenities-list form button  .chip {
-    background: var(--bg-layer4);
     padding: 8px 15px;
     gap: 5px;
 }
@@ -203,7 +200,6 @@ button {
 }
 
 .facilities-list form button  .chip {
-    background: var(--bg-layer4);
     padding: 8px 15px;
     gap: 5px;
 }
@@ -213,13 +209,11 @@ button {
 }
 
 .inclusion-list form button  .chip {
-    background: var(--bg-layer4);
     padding: 8px 15px;
     gap: 5px;
 }
 
 .rules-list button  .chip {
-    background: var(--bg-layer4);
     padding: 8px 15px;
     gap: 5px;
 }
