@@ -24,19 +24,13 @@
         </div>
     </div>
 
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#1D6156" fill-opacity="1" d="M0,288L80,288C160,288,320,288,480,261.3C640,235,800,181,960,170.7C1120,160,1280,192,1360,208L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+            </svg> -->
     <div class="background-img_container">
+        <div class="background-img-top"></div>
         <div class="background-img-1">
-            <svg width="360" height="190" viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H360.327C360.327 0 406.841 110.249 360.327 164.865C285.814 252.359 0 76.2097 0 164.865C0 253.52 0 0 0 0Z" fill="#1D6156" />
-            </svg>
-        </div>
-        <div class="background-img-2">
-            <svg width="360" height="190" viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0H360.327C360.327 0 406.841 110.249 360.327 164.865C285.814 252.359 0 76.2097 0 164.865C0 253.52 0 0 0 0Z" fill="#1D6156" />
-            </svg>
-        </div>
-        <div class="background-img-3">
-            <svg width="360" height="190" viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 360 190" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0H360.327C360.327 0 406.841 110.249 360.327 164.865C285.814 252.359 0 76.2097 0 164.865C0 253.52 0 0 0 0Z" fill="#1D6156" />
             </svg>
         </div>
