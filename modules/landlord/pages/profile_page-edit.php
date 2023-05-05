@@ -25,14 +25,14 @@
 
 
     <div class="header">
-            <a href="" class="chevron-btn">
-                <i class="bi bi-chevron-left"></i>
-            </a>
+        <a href="" class="chevron-btn">
+            <i class="bi bi-chevron-left"></i>
+        </a>
         <p>PROFILE</p>
     </div>
 
     <div class="background-img">
-        <svg width="360" height="190" viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="100%" height="190" viewBox="0 0 360 190" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H360.327C360.327 0 406.841 110.249 360.327 164.865C285.814 252.359 0 76.2097 0 164.865C0 253.52 0 0 0 0Z" fill="#1D6156" />
         </svg>
     </div>
@@ -50,9 +50,9 @@
         </div>
     </div>
 
-    <div class="form-container">
+    <form class="form-container">
         <div class="custom__inputs">
-            <label class="box">
+            <label>
                 <input required="" type="text">
                 <span>Name</span>
             </label>
@@ -85,10 +85,12 @@
                 <span>Gender</span>
             </label>
         </div>
-    </div>
 
-    <button class="btn btn-primary"><a href=""></a>Save
-    </button>
+        <button class="btn btn-primary btn-fill" type="submit">Save
+        </button>
+    </form>
+
+
 </body>
 
 </html>
