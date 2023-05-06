@@ -8,14 +8,14 @@
     <title>Manage Units - Rules</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
-    <link rel="stylesheet" href="/cr_demo/css/manage_units/index.css">
+    <link rel="stylesheet" href="../css/manage_units/index.css">
     <link rel="stylesheet" href="../css/manage_unit-rules/index.css">
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-back">
-            <a href="#">
+            <a href="/cr_demo/modules/landlord/pages/manage_unit-edit_unit.php">
                 <i class="bi bi-chevron-left"></i>
             </a>
         </div>

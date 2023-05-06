@@ -8,7 +8,7 @@
     <title>Manage Units - Location</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
-    <link rel="stylesheet" href="/cr_demo/css/manage_units/index.css">
+    <link rel="stylesheet" href="../css/manage_units/index.css">
     <link rel="stylesheet" href="../css/manage_unit-location/index.css">
 </head>
 
