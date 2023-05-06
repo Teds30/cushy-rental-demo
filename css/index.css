@@ -717,3 +717,67 @@ a.link {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/*
+
+Card Radio
+
+*/
+.radio-card-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+}
+.radio-card {
+    display: inline-flex;
+    max-width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.radio-card .option {
+    border: 2px solid var(--border-color);
+    background: transparent;
+
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.radio-card .option .dot {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+.radio-card .option .dot::before {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+input[type='radio'] {
+    display: none;
+}
+
+.radio-card .option-input:checked + label {
+    background: #03b07726;
+    border-color: var(--accent);
+}
+.radio-card .option-input:checked + label .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
