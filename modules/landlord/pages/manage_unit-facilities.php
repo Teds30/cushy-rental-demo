@@ -28,6 +28,8 @@
     <div class="main-box_container">
         <p class="title">Set up facilities</p>
 
+        <hr>
+    
         <div class="main-box-items">
             <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="0.5" width="32" height="32" rx="4" fill="#B2B9CE" />
@@ -41,6 +43,8 @@
                 <option value="">Shared</option>
             </select>
         </div>
+
+        <hr>
 
         <div class="main-box-items">
             <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +61,7 @@
             </select>
         </div>
 
+        <hr>
 
         <div class="main-box-items">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +78,8 @@
             </select>
         </div>
 
+        <hr>
+
         <div class="main-box-items">
             <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="32.6667" height="31" rx="4" fill="#B2B9CE" />
@@ -88,6 +95,8 @@
             </select>
         </div>
 
+        <hr>
+
         <div class="main-box-items-2">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="32" height="32" rx="4" fill="#B2B9CE" />
@@ -102,6 +111,8 @@
                 <option value="">Shared</option>
             </select>
         </div>
+        
+
 
 
         <button class="btn btn-primary btn-fill" type="submit">Save
