@@ -1,7 +1,13 @@
 nav {
+    /* background: none;
+    border: none; */
     padding: 12px;
     z-index: 1;
 }
+
+/* nav .nav-back i,  .nav-title h2 {
+    color: var(--bg-layer1);
+} */
 
 p {
     font-family: 'Inter';
@@ -12,10 +18,11 @@ p {
 }
 
 .main-content {
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 61px 0 0 0;
+    position: relative;
+    top: 61px;
+    /* border: 2px solid red; */
 }
 
 .content-photo {
@@ -56,6 +63,11 @@ p {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.rating .stars {
+    position: relative;
+    top: -3px;
 }
 
 .stars > i {
@@ -467,6 +479,7 @@ p {
 }
  
 .nav-bottom {
+    background: var(--bg-layer1);
     position: sticky;
     bottom: 0;
     display: flex;
@@ -475,10 +488,12 @@ p {
 
 .nav-bottom a {
     flex: 1;
+    text-decoration: none;
 }
 
 .nav-bottom .call {
     border-color: var(--accent);
     color: var(--accent);
     border-radius: 4px;
+    text-decoration: none;
 }
