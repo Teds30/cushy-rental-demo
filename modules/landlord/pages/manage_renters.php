@@ -8,7 +8,7 @@
     <title>Manage Renters - Tenants List</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
-    <link rel="stylesheet" href="/cr_demo/css/manage_units/index.css">
+    <link rel="stylesheet" href="../css/manage_units/index.css">
     <link rel="stylesheet" href="../css/manage_renters/index.css">
 </head>
 

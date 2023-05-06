@@ -8,7 +8,7 @@
     <title>Profile Page - Landlord Customization</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
-    <link rel="stylesheet" href="/cr_demo/css/manage_units/index.css">
+    <link rel="stylesheet" href="../css/manage_units/index.css">
     <link rel="stylesheet" href="../css/profile_page-edit/index.css">
 </head>
 

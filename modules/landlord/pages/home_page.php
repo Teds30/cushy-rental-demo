@@ -8,7 +8,6 @@
     <title>Home Page - Landlord</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
-    <link rel="stylesheet" href="/cr_demo/css/manage_units/index.css">
     <link rel="stylesheet" href="../css/home_page/index.css">
 </head>
 

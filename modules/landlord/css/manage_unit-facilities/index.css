@@ -19,6 +19,13 @@
     gap: 20px;
 }
 
+.right-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
 .main-box-items-2 {
     display: flex;
     flex-direction: row;
