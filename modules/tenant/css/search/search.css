@@ -20,8 +20,8 @@
 }
 
 .filter-filter {
-     width: 100px;
-     text-align: center;
+    width: 100px;
+    text-align: center;
 }
 
 .filter-filter .title {
@@ -37,7 +37,17 @@
     padding: 0 11px 35px 11px;
 }
 
-.search-location, .location-radius, .map, .boarders, .price-range, .rating, .quantity, .ammenities, .facilities, .inclusion, .rules {
+.search-location,
+.location-radius,
+.map,
+.boarders,
+.price-range,
+.rating,
+.quantity,
+.ammenities,
+.facilities,
+.inclusion,
+.rules {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -64,7 +74,11 @@
     gap: 17px;
 }
 
-.search-position-location, .location-radius-meters, .rating-star, .ammenities-list, .inclusion-list {
+.search-position-location,
+.location-radius-meters,
+.rating-star,
+.ammenities-list,
+.inclusion-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -88,7 +102,16 @@ button {
     height: 31px;
 }
 
-.location-radius-title, .map-title, .boarder-title, .price-range-title, .rating-title, .quantity-title, .ammenities-title, .facilities-title, .inclusion-title, .rules-title {
+.location-radius-title,
+.map-title,
+.boarder-title,
+.price-range-title,
+.rating-title,
+.quantity-title,
+.ammenities-title,
+.facilities-title,
+.inclusion-title,
+.rules-title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -96,7 +119,15 @@ button {
     border-bottom: 1px solid var(--border-color);
 }
 
-.location-radius-meters, .map-zone, .map-inter, .boarders-available, .quantity-computation, .ammenities-list, .facilities-list, .inclusion-list, .rules-list {
+.location-radius-meters,
+.map-zone,
+.map-inter,
+.boarders-available,
+.quantity-computation,
+.ammenities-list,
+.facilities-list,
+.inclusion-list,
+.rules-list {
     padding-top: 12px;
 }
 
@@ -136,7 +167,7 @@ button {
     gap: 10px;
 }
 
-.boarders-available form button  .chip {
+.boarders-available form button .chip {
     padding: 8px 15px;
     gap: 4px;
 }
@@ -190,7 +221,7 @@ button {
     gap: 10px;
 }
 
-.ammenities-list form button  .chip {
+.ammenities-list form button .chip {
     padding: 8px 15px;
     gap: 5px;
 }
@@ -199,7 +230,7 @@ button {
     gap: 10px;
 }
 
-.facilities-list form button  .chip {
+.facilities-list form button .chip {
     padding: 8px 15px;
     gap: 5px;
 }
@@ -208,12 +239,48 @@ button {
     gap: 10px;
 }
 
-.inclusion-list form button  .chip {
+.inclusion-list form button .chip {
     padding: 8px 15px;
     gap: 5px;
 }
 
-.rules-list button  .chip {
+.rules-list button .chip {
     padding: 8px 15px;
     gap: 5px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.map-map {
+    position: relative;
+    z-index: 1;
+}
+.centerMarker {
+    position: absolute;
+    /*url of the marker*/
+    /* background: url(http://maps.gstatic.com/mapfiles/markers2/marker.png)
+        no-repeat; */
+    /*center the marker*/
+    /* top: calc(50% + 24px);
+    left: calc(50% + 5px); */
+
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    z-index: 10;
+    /*fix offset when needed*/
+    /* margin-left: -10px;
+    margin-top: -34px; */
+    /*size of the image*/
+    height: 24px;
+    width: 24px;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: var(--accent);
+
+    cursor: pointer;
 }
