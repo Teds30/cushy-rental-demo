@@ -12,7 +12,19 @@
 </head>
 
 <body>
+
     <div class="main-box_container">
+        <a href="" class="btn btn-link">
+
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 15.5L1 8.5L8 1.5M1.97222 8.5H16.1667" stroke="#222736" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+            Manage Units
+        </a>
+
+
         <h2>Create a unit</h2>
 
         <div class="main-box_sub-container">
@@ -36,13 +48,7 @@
                             </label>
                         </div>
 
-                        <div class="custom__inputs">
-                            <label>
-                                <input required="" type="text">
-                                <span>Unit Details </span>
-                            </label>
-                        </div>
-
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Description"></textarea>
                         <!-- <div class="button-container">
                             <button class="btn btn-primary" type="submit">
                                 Next
@@ -164,7 +170,7 @@
                                         </svg>
 
                                     </span>
-                                    <span class="checkbox-label">Air Condition</span>
+                                    <span class="checkbox-label">TV</span>
                                 </span>
                             </label>
                         </div>
@@ -278,15 +284,15 @@
                     <div class="radio-card-container">
 
                         <div class="radio-card">
-                            <input class="option-input" type="radio" name="select" id="option-1" checked>
-                            <label for="option-1" class="option option-1">
+                            <input class="option-input" type="radio" name="select" id="option-3" checked>
+                            <label for="option-3" class="option option-3">
                                 <div class="dot"></div>
                                 <span class="strong">Owned</span>
                             </label>
                         </div>
                         <div class="radio-card">
-                            <input class="option-input" type="radio" name="select" id="option-2">
-                            <label for="option-2" class="option option-2">
+                            <input class="option-input" type="radio" name="select" id="option-4">
+                            <label for="option-4" class="option option-4">
                                 <div class="dot"></div>
                                 <span class="strong">Shared</span>
                             </label>
@@ -612,11 +618,10 @@
                         <div class="custom__inputs">
                             <label>
                                 <input required="" type="text">
-                                <span>Total Slots</span>
+                                <span>Location</span>
                             </label>
                         </div>
 
-                        <span>Change</span>
                     </div>
                 </div>
             </div>
@@ -629,14 +634,34 @@
                     <div class="vl"></div>
                 </div>
 
-                <div class="right-box">
-                    <p class="right-box-toptext pre-title">UPLOAD IMAGES</p>
+                <div class="right-box-midtext">
+                    <div class="right-box">
+                        <p class="right-box-toptext pre-title">UPLOAD IMAGES</p>
 
-                    <p class="title">Showcase your units layout</p>
-                    <p class="caption">Upload atleast 3 images of your unit</p>
+                        <p class="title">Showcase your units layout</p>
+                        <p class="caption">Upload atleast 3 images of your unit</p>
 
-                    
+
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                    <div class="button-container">
+                        <button class="btn btn-primary" type="submit">
+
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46392 19.1997 6.47177 18.364 5.63604C17.5282 4.80031 16.5361 4.13738 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3C10.8181 3 9.64778 3.23279 8.55585 3.68508C7.46392 4.13738 6.47177 4.80031 5.63604 5.63604C4.80031 6.47177 4.13738 7.46392 3.68508 8.55585C3.23279 9.64778 3 10.8181 3 12Z" stroke="#FBFBFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9 12L11 14L15 10" stroke="#FBFBFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            Finish
+                        </button>
+                    </div>
                 </div>
+
+
             </div>
         </div>
 </body>

@@ -60,15 +60,11 @@
     <div class="details-container">
         <p class="title">Unit Name</p>
 
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Tya Els Boarding House">
-        </div>
+        <textarea name="" id="" cols="30" rows="8" placeholder="Description"></textarea>
 
         <p class="title">Unit Description</p>
 
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Tya Els Boarding House">
-        </div>
+        <textarea name="" id="" cols="30" rows="8" placeholder="Description"></textarea>
 
         <hr>
 
