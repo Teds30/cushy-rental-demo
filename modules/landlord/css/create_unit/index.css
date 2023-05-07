@@ -67,14 +67,14 @@
   padding-right: 12px;
 }
 
-/* .button-container {
+.button-container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 0px;
   gap: 10px;
-} */
+}
 
 .checkbox-container {
   width: 100%;
