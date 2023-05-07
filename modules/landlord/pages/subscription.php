@@ -21,7 +21,7 @@
     </nav>
 
     <div class="headertext-container">
-        <p>Subscription</p>
+        <h2 class="top-title">Subscription</h2>
 
         <p class="pre title">THE RIGHT PLAN FOR YOUR BUSINESS</p>
 
