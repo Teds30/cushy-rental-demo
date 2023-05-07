@@ -12,7 +12,19 @@
 </head>
 
 <body>
+
     <div class="main-box_container">
+        <a href="" class="btn btn-link">
+
+            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 15.5L1 8.5L8 1.5M1.97222 8.5H16.1667" stroke="#222736" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+            Manage Units
+        </a>
+
+
         <h2>Create a unit</h2>
 
         <div class="main-box_sub-container">
@@ -158,7 +170,7 @@
                                         </svg>
 
                                     </span>
-                                    <span class="checkbox-label">Air Condition</span>
+                                    <span class="checkbox-label">TV</span>
                                 </span>
                             </label>
                         </div>
@@ -272,15 +284,15 @@
                     <div class="radio-card-container">
 
                         <div class="radio-card">
-                            <input class="option-input" type="radio" name="select" id="option-1" checked>
-                            <label for="option-1" class="option option-1">
+                            <input class="option-input" type="radio" name="select" id="option-3" checked>
+                            <label for="option-3" class="option option-3">
                                 <div class="dot"></div>
                                 <span class="strong">Owned</span>
                             </label>
                         </div>
                         <div class="radio-card">
-                            <input class="option-input" type="radio" name="select" id="option-2">
-                            <label for="option-2" class="option option-2">
+                            <input class="option-input" type="radio" name="select" id="option-4">
+                            <label for="option-4" class="option option-4">
                                 <div class="dot"></div>
                                 <span class="strong">Shared</span>
                             </label>
@@ -633,7 +645,7 @@
                     </div>
 
                     <div>
-                        
+
                     </div>
 
                     <div class="button-container">
