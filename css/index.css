@@ -499,6 +499,8 @@ a.link {
     color: var(--fc-body);
     border: 1px solid var(--border-color);
     font-weight: 500;
+
+    cursor: pointer;
 }
 
 .chip-icon {
