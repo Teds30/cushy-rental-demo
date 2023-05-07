@@ -1,0 +1,157 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 26px 20px 26px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: flex-start;
+    align-items: start;
+    position: relative;
+    left: -10px;
+    top: 15px;
+}
+
+.sign-in, .sign-up {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    gap: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--fc-strong);
+}
+
+form::after {
+    content: "or Sign In with";
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    bottom: -30px;
+    left: 35%;
+    z-index: 1;
+    background: var(--bg);
+    width: 30%;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in #remember {
+    width: 24px;
+    height: 24px;
+    accent-color: var(--accent);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.facebook-google {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 20px 20px;
+}
+
+.facebook-google a {
+    display: flex;
+    gap: 22px;
+    padding-top: 20px;
+}
+
+.facebook a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.google a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-decoration: none;
+}
+
+.dont-have-account {
+    display: flex;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #818181;
+    border-radius: 8px;
+}
+
+.user > button {
+    flex: 1;
+}
+
+.submit {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: 'Inter';
+    font-family: 'Inter';
+}
+
+.create-account-title {
+    display: flex;
+    justify-content: center;
+}
+
+.lastname-firstname {
+    display: flex;
+    gap: 15px;
+}
+
+.lastname-firstname > .custom__inputs {
+    flex: 1;
+}
+
+.tenant {
+    border-radius: 8px 0 0 8px;
+    background: var(--accent);
+    color: var(--bg-layer1);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 7px 0px 0px 7px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.tenant .title {
+    color: var(--bg-layer1);
+}
+
+.landlord {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Inter';
+}
+
+.sign-up #remember {
+    width: 24px;
+    height: 24px;
+    accent-color: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+}
