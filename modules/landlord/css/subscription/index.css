@@ -1,201 +1,216 @@
 nav {
-  display: flex;
-  padding-top: 28px;
-  padding-left: 13px;
+    display: flex;
+    padding-top: 28px;
+    padding-left: 13px;
 }
 
 .nav-back i {
-  font-size: 24px;
-  color: var(--fc-strong);
+    font-size: 24px;
+    color: var(--fc-strong);
 }
 
 h2 {
-  font-family: "Tangerine";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 64px;
-  background: linear-gradient(88.02deg, #03b077 -1.56%, #a4eb5d 41.56%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    background: linear-gradient(88.02deg, #03b077 -1.56%, #a4eb5d 41.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .headertext-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0px 27px;
-  gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 27px;
+    gap: 16px;
 }
 
 .headertext-container .caption {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .container {
-  width: 320px;
-  height: 100%;
-  max-width: 600px;
-  max-height: 600px;
-  display: flex;
-  transform-style: preserve-3d;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
+    width: 320px;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 .cards {
-  position: relative;
-  height: 500px;
-  width: 400px;
-  margin-bottom: 20px;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+    position: relative;
+    height: 500px;
+    width: 400px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .cards label {
-  position: absolute;
-  width: 250px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-  transition: transform 0.55s ease;
+    position: absolute;
+    width: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
 }
 
 .card-details-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 9px;
 }
 
 .card-details-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
 }
 
 .card-price-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
 
 .peso {
-  font-weight: 400;
-  font-size: 30px;
-  color: #000000;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 10px;
 }
 
 .price {
-  font-weight: 700;
-  font-size: 60px;
-  color: #000000;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price h1 {
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .month {
-  font-weight: 400;
-  font-size: 13px;
-  color: #5c6173;
-  align-self: flex-end;
+    color: #5c6173;
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    /* border: 1px solid red; */
+    align-items: flex-end;
+    padding: 10px;
 }
-
+.month p {
+    font-weight: 400;
+    font-size: 13px;
+}
 .cards .card-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 24px 22px;
-  gap: 20px;
-  height: 406px;
-  width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 22px;
+    gap: 20px;
+    height: 406px;
+    width: 250px;
 }
 
 .card-top-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
 }
 
 .card-top-text-icon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 .card-top-text-icon p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .card .btn-contact {
-  overflow-x: hidden;
-  width: 100%;
-  border-radius: 5px;
-  display: flex;
-  font-size: 25px;
-  font-weight: 700;
-  transition: all 0.7s ease;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all 0.7s ease;
 }
 
 #s1:checked ~ .cards #slide3,
 #s4:checked ~ .cards #slide1,
 #s5:checked ~ .cards #slide2 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(70%, 0, -100px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -100px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
 }
 
 #s3:checked ~ .cards #slide1,
 #s4:checked ~ .cards #slide2,
 #s5:checked ~ .cards #slide3 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(-70%, 0, -100px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -100px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
 }
 
 #s2:checked ~ .cards #slide1,
 #s3:checked ~ .cards #slide2,
 #s4:checked ~ .cards #slide3 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(-75%, 0, -20px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-75%, 0, -20px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
 }
 
 #s1:checked ~ .cards #slide1,
 #s2:checked ~ .cards #slide2,
 #s3:checked ~ .cards #slide3 {
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
-  transform: translate3d(0, 0, 0);
-  --current-color1: #fad00c;
-  --current-color2: #eceaed;
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #eceaed;
 }
 
 #s1:checked ~ .cards #slide2,
 #s2:checked ~ .cards #slide3,
 #s5:checked ~ .cards #slide1 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(75%, 0, -20px);
-  --current-color1: #eceaed;
-  --current-color2: #404457;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(75%, 0, -20px);
+    --current-color1: #eceaed;
+    --current-color2: #404457;
 }
