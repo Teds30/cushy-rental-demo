@@ -2,7 +2,7 @@
   z-index: 1;
 }
 
-.filter-container {
+.filter {
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -61,7 +61,7 @@ input.search-input {
   background: transparent url("/cr_demo/assets/icons/search.svg") no-repeat 12px;
 }
 
-.main-box_container {
+.tenants-main-box_container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -114,4 +114,14 @@ input.search-input {
   font-size: 10px;
   line-height: 12px;
   color: #b2b9ce;
+}
+
+
+.inquiries-main-box_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  margin: 20px 12px;
 }

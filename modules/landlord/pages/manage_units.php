@@ -14,7 +14,9 @@
 <body>
     <nav>
         <div class="nav-back">
-            <i class="bi bi-chevron-left"></i>
+            <a href="../../landlord/pages/my_unit-landlord.php">
+                <i class="bi bi-chevron-left"></i>
+            </a>
         </div>
         <div class="nav-title">
             <p class="title">Manage Units</p>

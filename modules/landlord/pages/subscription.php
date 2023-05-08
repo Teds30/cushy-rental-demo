@@ -14,7 +14,7 @@
 <body>
     <nav class="nav">
         <div class="nav-back">
-            <a href="">
+            <a href="../../landlord/pages/profile_page.php">
                 <i class="bi bi-chevron-left"></i>
             </a>
         </div>

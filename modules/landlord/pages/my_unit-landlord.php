@@ -35,7 +35,7 @@
     </div>
 
     <div class="main-box_container">
-        <a href="#" class="btn-link box-1_container">
+        <a href="../../landlord/pages/manage_renters.php" class="btn-link box-1_container">
             <div class="box-1">
                 <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_808_3848)">
@@ -54,7 +54,7 @@
             </div>
         </a>
 
-        <a href="#" class="btn-link box-2_container">
+        <a href="../../landlord/pages/manage_units.php" class="btn-link box-2_container">
             <div class="box-2">
 
                 <svg width="55" height="54" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg">
