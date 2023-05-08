@@ -31,8 +31,8 @@
 
         <div class="container">
 
-            <input type="radio" name="slider" class="d-none" id="s1" checked>
-            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s1">
+            <input type="radio" name="slider" class="d-none" id="s2" checked>
             <input type="radio" name="slider" class="d-none" id="s3">
 
             <div class="cards">
@@ -53,7 +53,7 @@
 
                         <div class="card-price-text">
                             <p class="peso">₱</p>
-                            <p class="price">199</p>
+                            <h1>199</h1>
                             <p class="month">/month</p>
                         </div>
 
