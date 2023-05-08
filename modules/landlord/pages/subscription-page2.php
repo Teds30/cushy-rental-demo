@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscription - Page 1</title>
+    <title>Subscription - Page 2</title>
 
     <link rel="stylesheet" href="/cr_demo/css/index.css">
     <link rel="stylesheet" href="../css/subscription-page/index.css">
@@ -26,23 +26,24 @@
         <p>Subscription</p>
     </div>
 
-
     <div class="step-container">
-        <div class="step-icon step-icon-active">
+        <div class="step-icon ">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_564_3156)">
+                <g clip-path="url(#clip0_564_3282)">
+                    <circle cx="12" cy="12" r="12" fill="#03B077" />
                     <path d="M12 22.5C9.21523 22.5 6.54451 21.3938 4.57538 19.4246C2.60625 17.4555 1.5 14.7848 1.5 12C1.5 9.21523 2.60625 6.54451 4.57538 4.57538C6.54451 2.60625 9.21523 1.5 12 1.5C14.7848 1.5 17.4555 2.60625 19.4246 4.57538C21.3938 6.54451 22.5 9.21523 22.5 12C22.5 14.7848 21.3938 17.4555 19.4246 19.4246C17.4555 21.3938 14.7848 22.5 12 22.5ZM12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24Z" fill="#03B077" />
-                    <path d="M12.8334 18.6666V5.33325L8.66675 9.49992" stroke="#03B077" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.8334 18.6666V5.33325L8.66675 9.49992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </g>
                 <defs>
-                    <clipPath id="clip0_564_3156">
+                    <clipPath id="clip0_564_3282">
                         <rect width="24" height="24" fill="white" />
                     </clipPath>
                 </defs>
             </svg>
+
         </div>
         <div class="hr-container-green"></div>
-        <div class="step-icon">
+        <div class="step-icon step-icon-active">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_564_3160)">
                     <path d="M12 22.5C9.21523 22.5 6.54451 21.3938 4.57538 19.4246C2.60625 17.4555 1.5 14.7848 1.5 12C1.5 9.21523 2.60625 6.54451 4.57538 4.57538C6.54451 2.60625 9.21523 1.5 12 1.5C14.7848 1.5 17.4555 2.60625 19.4246 4.57538C21.3938 6.54451 22.5 9.21523 22.5 12C22.5 14.7848 21.3938 17.4555 19.4246 19.4246C17.4555 21.3938 14.7848 22.5 12 22.5ZM12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0C8.8174 0 5.76516 1.26428 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C5.76516 22.7357 8.8174 24 12 24Z" fill="#03B077" />
@@ -76,31 +77,46 @@
     </div>
 
 
-    <div class="main-box-container">
-        <p class="caption">Please scan the QR code provided and follow the payment instructions. Or pay directly to the given number. Make sure to input the correct amount and verify the payment details before proceeding with the payment.</p>
+    <div class="main-box-container2">
+        <p class="caption">Once you have completed the payment, please fill out the following information for verification:</p>
 
-        <div class="box-container">
-            <p>QR Code</p>
-
-            <img src="../img/qrcode.jpg" alt="">
-
-            <div class="box-bottom-container">
-                <div class="hr-container"></div>
-                <div class="text-container">
-                    <p class="caption">Or through this number</p>
-                </div>
-                <div class="hr-container"></div>
+        <form action="" class="form-container">
+            <p class="title">User Information:</p>
+            <div class="custom__inputs">
+                <label>
+                    <input required="" type="text">
+                    <span>Name of unit to promote</span>
+                </label>
             </div>
 
+            <div class="custom__inputs">
+                <label>
+                    <input required="" type="text">
+                    <span>Gcash Account Full Name</span>
+                </label>
+            </div>
 
+            <div class="custom__inputs">
+                <label>
+                    <input required="" type="text">
+                    <span>GCash Account Number</span>
+                </label>
+            </div>
 
+            <div class="custom__inputs">
+                <label>
+                    <input required="" type="text">
+                    <span>Email Address</span>
+                </label>
+            </div>
 
-            <p class="number title">+639123456789</p>
-        </div>
-
+            <p class="caption">Please ensure that all the information provided is accurate and up-to-date to avoid any issues with your subscription</p>
+            
+        </form>
 
         <button class="btn btn-primary btn-fill" type="submit">Next
         </button>
+
     </div>
 </body>
 
