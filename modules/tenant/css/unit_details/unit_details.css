@@ -364,11 +364,12 @@ p {
     flex-direction: column;
     padding: 0 15px;
     border-radius: 10px 10px 0 0;
-    position: sticky;
+    position: fixed;
     bottom: 0;
-    height: 500px;
+    height: 80%;
     width: 100%;
     background: var(--bg);
+    z-index: 3;
 }
 
 .reviews-section nav {
