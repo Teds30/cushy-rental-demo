@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../../../../css/manage_units/index.css">
 
     <link rel="stylesheet" href="../../css/search/search.css">
+
+    
 </head>
 
 <body>
@@ -293,6 +295,38 @@
 
                 <h2 class="title" style="font-size: 16px; font-weight: 700; color: var(--fc-body)">Price Range</h2>
 
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="values">
+                    <span id="range1">
+                        0
+                    </span>
+                    <span> &dash; </span>
+                    <span id="range2">
+                        8000
+                    </span>
+                </div>
+                <div class="slider-container">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="8000" value="1500" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="8000" value="5000" id="slider-2" oninput="slideTwo()">
+                </div>
+                <div class="slider-input-container">
+                    <div class="custom__inputs">
+                        <label>
+                            <input required='' type="number" min="0" max="8000" id="slider-input-1" value="0" oninput="manualOne()">
+                            <span>Minimum Price</span>
+                        </label>
+                    </div>
+                    <div class="dash-separator"></div>
+                    <div class=" custom__inputs">
+                        <label>
+                            <input required='' type="number" min="0" max="8000" id="slider-input-2" value="0" oninput="manualTwo()">
+                            <span>Maximum Price</span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -1025,6 +1059,8 @@
         };
 
     </script>
+
+    <script src="../../../../js/range_slider.js"></script>
 </body>
 
 </html>
