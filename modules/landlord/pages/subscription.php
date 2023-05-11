@@ -31,8 +31,8 @@
 
         <div class="container">
 
-            <input type="radio" name="slider" class="d-none" id="s1" checked>
-            <input type="radio" name="slider" class="d-none" id="s2">
+            <input type="radio" name="slider" class="d-none" id="s1">
+            <input type="radio" name="slider" class="d-none" id="s2" checked>
             <input type="radio" name="slider" class="d-none" id="s3">
 
             <div class="cards">
@@ -52,9 +52,14 @@
                         </div>
 
                         <div class="card-price-text">
-                            <p class="peso">₱</p>
-                            <p class="price">199</p>
-                            <p class="month">/month</p>
+
+                            <div class="peso">₱</div>
+                            <div class="price">
+                                <h1>199</h1>
+                            </div>
+                            <div class="month">
+                                <p>/month</p>
+                            </div>
                         </div>
 
                         <button class="btn btn-primary btn-fill btn-contact">Subscribe
@@ -106,9 +111,13 @@
                         </div>
 
                         <div class="card-price-text">
-                            <p class="peso">₱</p>
-                            <p class="price">199</p>
-                            <p class="month">/month</p>
+                            <div class="peso">₱</div>
+                            <div class="price">
+                                <h1>199</h1>
+                            </div>
+                            <div class="month">
+                                <p>/month</p>
+                            </div>
                         </div>
 
                         <button class="btn btn-primary btn-fill btn-contact">Subscribe
@@ -159,9 +168,14 @@
                         </div>
 
                         <div class="card-price-text">
-                            <p class="peso">₱</p>
-                            <p class="price">199</p>
-                            <p class="month">/month</p>
+
+                            <div class="peso">₱</div>
+                            <div class="price">
+                                <h1>199</h1>
+                            </div>
+                            <div class="month">
+                                <p>/month</p>
+                            </div>
                         </div>
 
                         <button class="btn btn-primary btn-fill btn-contact">Subscribe

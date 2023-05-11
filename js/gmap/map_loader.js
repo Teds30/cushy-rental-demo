@@ -135,6 +135,7 @@ function setRadius(radius = 1) {
 }
 
 function setLoc() {
+    
     const selectedCoords = {
         lat: search_map.getCenter().lat(),
         lng: search_map.getCenter().lng(),
