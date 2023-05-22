@@ -1,7 +1,6 @@
 <?php
 
-include_once('../../../connection/connection.php');
-include_once('../../../functions/db_functions.php');
+include_once('../../../../functions/db_functions.php');
 
 // fetch all units
 function units_index()

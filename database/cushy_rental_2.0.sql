@@ -93,6 +93,7 @@ CREATE TABLE IF NOT EXISTS `cr_units`(
 latitude: 0,
 longitude: 0
 }',
+    `address` TEXT NOT NULL,
     `target_gender` TINYINT NOT NULL DEFAULT '0' COMMENT '\"0\" -> all,
 \"1\" -> male,
 \"2\" -> female',
@@ -387,13 +388,13 @@ ALTER TABLE
 
 
 insert into cr_user_types (id, name, status) values
-    (1, "Student", 1),
-    (2, "Employee", 1),
-    (3, "Family", 1);
+    (1, "Admin", 1),
+    (2, "Landlord", 1),
+    (3, "Tenant", 1);
 insert into cr_users (id, email, password, first_name, middle_name, last_name, gender, phone_number, user_type_id, is_verified, status) values
     (1, "otilla@gmail.com", "123456789", "John", "Canila", "Otilla", 1, "09674322308", 1, 0, 1);
-insert into cr_units (id, landlord_id, name, details, price, month_advance, month_deposit, location, target_gender, slots, subscription_id, is_listed, request_status, status) values
-    (1, 1, "Ellas Boarding House", "2 Bedrooms Boarding House Fully Furnished for rent in Legazpi City", 3500.00, 3500, 3500, '{"lat":13.131349, "lng":123.761566}',0, 5, 0, 1, 1, 1);
+insert into cr_units (id, landlord_id, name, details, price, month_advance, month_deposit, location,address, target_gender, slots, subscription_id, is_listed, request_status, status) values
+    (1, 1, "Elas Boarding House", "2 Bedrooms Boarding House Fully Furnished for rent in Legazpi City", 3500.00, 3500, 3500, '{"lat":13.145536, "lng":123.728441}',"EM's Barrio N",0, 5, 0, 1, 1, 1);
 insert into cr_facilities (id, name, icon, is_switch, is_available, status) values
     (1, "Comfort Room", "tiolet", 0, 1, 1);
 insert into cr_unit_facilities (id, unit_id, facility_id, is_shared, status) values

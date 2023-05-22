@@ -3,6 +3,11 @@
 
 ?>
 
+<?php
+
+header('Location: ./modules/tenant/pages/sign-in/sign-in.php')
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

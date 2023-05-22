@@ -13,7 +13,8 @@
     top: 15px;
 }
 
-.sign-in, .sign-up {
+.sign-in,
+.sign-up {
     display: flex;
     flex-direction: column;
     padding-top: 25px;
@@ -25,10 +26,10 @@ form {
     flex-direction: column;
     gap: 25px;
     padding-bottom: 20px;
-    border-bottom: 1px solid var(--fc-strong);
+    /* border-bottom: 1px solid var(--fc-strong); */
 }
 
-form::after {
+/* form::after {
     content: "or Sign In with";
     font-family: 'Inter';
     font-weight: 400;
@@ -40,7 +41,7 @@ form::after {
     z-index: 1;
     background: var(--bg);
     width: 30%;
-}
+} */
 
 .remember-forgot {
     display: flex;
@@ -145,7 +146,6 @@ form::after {
 .landlord {
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Inter';
 }
 
 .sign-up #remember {

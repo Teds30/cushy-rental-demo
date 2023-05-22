@@ -5,6 +5,12 @@ $selected = 'amenities';
 
 
 include '.././../../functions/path.php';
+include '../../../api/amenities/amenities.php';
+
+
+$q_amenities = amenities_index();
+$amenities = $q_amenities['data'];
+
 
 ?>
 

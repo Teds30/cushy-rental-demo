@@ -1,10 +1,10 @@
 <?php
 
-include_once('../../../connection/connection.php');
 
 function db_query($sql = '', $msg)
 {
-    $con = connection();
+
+    $con = include($_SERVER['DOCUMENT_ROOT'] . '/cr_demo/connection/connection.php');
 
     $res = $con->query($sql) or die($con->error);
 
@@ -28,7 +28,8 @@ function db_query($sql = '', $msg)
 
 function db_queryOnce($sql = '', $msg)
 {
-    $con = connection();
+
+    $con = include($_SERVER['DOCUMENT_ROOT'] . '/cr_demo/connection/connection.php');
 
     $res = $con->query($sql) or die($con->error);
 
@@ -50,7 +51,8 @@ function db_queryOnce($sql = '', $msg)
 
 function db_nonquery($sql = '', $msg = '', $is_insert = false)
 {
-    $con = connection();
+
+    $con = include($_SERVER['DOCUMENT_ROOT'] . '/cr_demo/connection/connection.php');
 
     $res = $con->query($sql) or die($con->error);
 
