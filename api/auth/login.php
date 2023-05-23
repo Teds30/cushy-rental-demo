@@ -28,7 +28,19 @@ echo json_encode($out);
 
 if ($data) {
     $_SESSION['USER_ID'] = $data['id'];
-    header("Location: " . $config['protocol'] . $callback_url);
+    $_SESSION['USER_TYPE'] = $data['user_type_id'];
+    $_SESSION['USER_FIRST_NAME'] = $data['first_name'];
+    $_SESSION['USER_LAST_NAME'] = $data['last_name'];
+
+    if ($_SESSION['USER_TYPE'] == 1) {
+
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/admin/pages/manage_units.php');
+    } else if ($_SESSION['USER_TYPE'] == 2) {
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/landlord/pages/home_page.php');
+    } else if ($_SESSION['USER_TYPE'] == 3) {
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/tenant/pages/home_page/home_page.php');
+    }
+    // header("Location: " . $config['protocol'] . $callback_url);
 }
 
 return $out;

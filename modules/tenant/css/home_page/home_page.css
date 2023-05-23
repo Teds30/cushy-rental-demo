@@ -7,25 +7,23 @@ img {
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     left: 29px;
     top: 16px;
 }
 
 .main-container > h2 {
     position: absolute;
-    width: 182px;
-    height: 40px;
-    left: 114px;
-    top: 46px;
+    left: 100px;
+    top: 24px;
 
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 40px;
-    background: linear-gradient(90deg, var(--accent) -2.06%, #7AB73D 104.45%);
+    background: linear-gradient(90deg, var(--accent) -2.06%, #7ab73d 104.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -132,7 +130,7 @@ img {
 .title-price > .smaller-text {
     font-size: 10px;
     font-weight: 400;
-    margin:  0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .title-price .book-mark {
@@ -141,7 +139,7 @@ img {
     right: 0;
 }
 
-.book-mark  button  {
+.book-mark button {
     padding: 0 0;
 }
 
@@ -157,7 +155,7 @@ img {
 
 .ratings > .smaller-text {
     font-size: 10px;
-    margin:  0 0 0 0;
+    margin: 0 0 0 0;
     font-weight: 600;
 }
 
@@ -189,7 +187,7 @@ img {
     padding: 10px 3px 10px 0;
 }
 
-.ammenities  .chip-icon {
+.ammenities .chip-icon {
     gap: 0;
     padding: 0 0 0 0;
     justify-content: 0;
@@ -210,7 +208,7 @@ img {
     padding: 10px 3px 10px 0;
 }
 
-.more  .chip-icon {
+.more .chip-icon {
     gap: 0;
     padding: 0 0 0 0;
     justify-content: 0;

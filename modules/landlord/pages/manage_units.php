@@ -22,6 +22,11 @@
             <p class="title">Manage Units</p>
             <p class="smaller-text">3 Units</p>
         </div>
+        <div class="nav-action">
+            <a href="/cr_demo/modules/landlord/pages/create_unit.php" class="link-reset">
+                <button class="btn btn-outlined">Add New</button>
+            </a>
+        </div>
     </nav>
     <div class="row">
 
@@ -102,9 +107,9 @@
                 </div>
             </div>
             <div class="unit-actions">
-                <button class="btn btn-primary btn-fill">
+                <a href="/cr_demo/modules/landlord/pages/manage_unit-edit_unit.php" class="link-reset btn btn-primary btn-fill">
                     Manage Unit
-                </button>
+                </a>
                 <button class="btn btn-outlined">
                     Promote
                 </button>

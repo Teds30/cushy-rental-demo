@@ -1,3 +1,9 @@
+<?php
+
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,8 +53,12 @@
 
         <div>
             <div class="profile-details">
-                <p class="profile-details_name">Teddy Marc Enaje</p>
-                <p class="profile-details_landlord">Landlord</p>
+                <p class="profile-details_name"><?= $_SESSION['USER_FIRST_NAME'] . " " . $_SESSION['USER_LAST_NAME'] ?></p>
+                <p class="profile-details_landlord"><?php if ($_SESSION['USER_TYPE'] == 2) {
+                                                        echo 'Landlord';
+                                                    } else {
+                                                        echo 'Tenant';
+                                                    } ?></p>
             </div>
         </div>
     </div>

@@ -39,7 +39,19 @@ $res = db_nonquery($sql, "Successfully created account.", true);
 
 if ($res) {
     $_SESSION['USER_ID'] = $res['inserted_id'];
-    header("Location: " . $config['protocol'] . $callback_url);
+    $_SESSION['USER_TYPE'] = $user_type_id;
+    $_SESSION['USER_FIRST_NAME'] = $firstname;
+    $_SESSION['USER_LAST_NAME'] = $lastname;
+
+    if ($_SESSION['USER_TYPE'] == 1) {
+
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/admin/pages/manage_units.php');
+    } else if ($_SESSION['USER_TYPE'] == 2) {
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/landlord/pages/home_page.php');
+    } else if ($_SESSION['USER_TYPE'] == 3) {
+        header("Location: " . $config['protocol'] . 'localhost/cr_demo/modules/tenant/pages/home_page/home_page.php');
+    }
+    // header("Location: " . $config['protocol'] . $callback_url);
 }
 
 return $res;

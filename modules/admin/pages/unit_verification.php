@@ -53,7 +53,7 @@ $selected = 'unit_verification';
                     </div>
                     <div class="tab-contents-container">
                         <div id="tab-content-0" class="tab-content" style="display:block">
-                            <a class="card-row-container btn-link" href="manage_unit_details.php">
+                            <a class="card-row-container btn-link" href="manage_unit_details.php?unit_id=1">
                                 <div class="card-row">
                                     <div class="cr-unit">
                                         <div class="cr-unit-img"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt="unit"></div>
@@ -65,7 +65,7 @@ $selected = 'unit_verification';
                                     <div class="cr-status status-chip status-chip-pending ">PENDING</div>
                                 </div>
                             </a>
-                            <a class="card-row-container btn-link" href="manage_unit_details.php">
+                            <a class="card-row-container btn-link" href="manage_unit_details.php?unit_id=1">
                                 <div class="card-row">
                                     <div class="cr-unit">
                                         <div class="cr-unit-img"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt="unit"></div>
@@ -81,7 +81,7 @@ $selected = 'unit_verification';
 
 
                         <div id="tab-content-1" class="tab-content">
-                            <a class="card-row-container btn-link" href="manage_unit_details.php">
+                            <a class="card-row-container btn-link" href="manage_unit_details.php?unit_id=1">
                                 <div class="card-row">
                                     <div class="cr-unit">
                                         <div class="cr-unit-img"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt="unit"></div>
@@ -95,7 +95,7 @@ $selected = 'unit_verification';
                             </a>
                         </div>
                         <div id="tab-content-2" class="tab-content">
-                            <a class="card-row-container btn-link" href="manage_unit_details.php">
+                            <a class="card-row-container btn-link" href="manage_unit_details.php?unit_id=1">
                                 <div class="card-row">
                                     <div class="cr-unit">
                                         <div class="cr-unit-img"><img src="/cr_demo/assets/images/units/unit1/unit_1_1.jpg" alt="unit"></div>

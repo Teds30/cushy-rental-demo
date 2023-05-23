@@ -1,6 +1,7 @@
 <?php
 
 
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,11 @@
 
         <section class="header">
             <div class="left">
-                <a href="./chats_home.php">
+                <a href="<?php if ($_SESSION['USER_TYPE'] == 2) {
+                                echo '/cr_demo/modules/landlord/pages/home_page.php';
+                            } else {
+                                echo '/cr_demo/modules/tenant/pages/home_page/home_page.php';
+                            } ?>">
                     <i class="bi bi-chevron-left"></i>
                 </a>
                 <h1>Chats</h1>
@@ -43,33 +48,17 @@
                             <img src="/cr_demo/assets/images/accounts/user1/user1.png" alt="">
                         </div>
                         <div class="convo-text">
-                            <p class="title name">Jano</p>
-                            <p class="title">Hi Dear</p>
+                            <p class="title name"><?= $_SESSION['USER_TYPE'] == 2 ? 'Teddy Marc' : 'Jano' ?></p>
+                            <p class="title">Received po. Thank you!</p>
                         </div>
                         <div class="convo-date">
                             <p class="smaller-text">4 m</p>
                             <div class="times">
-                                <span class="smaller-text">5</span>
+                                <span class="smaller-text">1</span>
                             </div>
                         </div>
                     </div>
                 </a>
-                <hr>
-                <a class="btn-link" href="./chat.php?recipient=1">
-                    <div class="convo-container">
-                        <div class="convo-user-img">
-                            <img src="/cr_demo/assets/images/accounts/user1/user1.png" alt="">
-                        </div>
-                        <div class="convo-text">
-                            <p class="title name">Sean</p>
-                            <p class="">Hi Dear</p>
-                        </div>
-                        <div class="convo-date">
-                            <p class="smaller-text">4 m</p>
-                        </div>
-                    </div>
-                </a>
-                <hr>
             </div>
         </section>
     </div>

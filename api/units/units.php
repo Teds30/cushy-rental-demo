@@ -1,6 +1,9 @@
 <?php
 
-include_once('../../../../functions/db_functions.php');
+// $config = include('../../../config/config.php');
+
+// include_once($config['app_path'] . '/functions/db_functions.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/cr_demo/functions/db_functions.php');
 
 // fetch all units
 function units_index()

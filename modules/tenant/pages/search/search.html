@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="../../css/search/search.css">
 
-    
+
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
         <div class="nav-back">
 
-            <a href="#">
+            <a href="/cr_demo/modules/tenant/pages/home_page/home_page.php">
 
                 <i class="bi bi-chevron-left"></i>
 
@@ -131,7 +131,7 @@
 
                 <form>
 
-                    <div class="chip" onclick="setRadius(.5)">
+                    <div class="chip chip-selected" onclick="setRadius(.5)">
                         <span style="font-size: 12px;;">500 Meters</span>
                     </div>
 
@@ -201,15 +201,15 @@
                     <div id="map">
                     </div>
                     <!-- Remove comment to activate map -->
-                    <!-- <div class="centerMarker"></div> -->
+                    <div class="centerMarker"></div>
                 </div>
                 <!-- <button class="btn btn-primary" onclick="setLoc()">Set Location</button> -->
 
                 <!-- Remove comment to activate map; tipid sa usage ko pls -->
-                <!-- <script src="/cr_demo/js/gmap/map_loader.js"></script>
+                <script src="/cr_demo/js/gmap/map_loader.js"></script>
                 <script async
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl7lIaMlrbXsl0XC12flalOrjNn3w6mho&callback=initMap">
-                    </script> -->
+                    </script>
 
             </div>
 
@@ -217,11 +217,11 @@
 
         <div class="search-button">
 
-            <form>
+            <a href="/cr_demo/modules/tenant/pages/units_after_search/units_after_search.php" class="link-reset">
 
                 <button type="button" class="btn btn-fill btn-primary" onclick="setLoc()">Search</button>
 
-            </form>
+            </a>
 
         </div>
 
@@ -317,14 +317,16 @@
                 <div class="slider-input-container">
                     <div class="custom__inputs">
                         <label>
-                            <input required='' type="number" min="0" max="8000" id="slider-input-1" value="0" oninput="manualOne()">
+                            <input required='' type="number" min="0" max="8000" id="slider-input-1" value="0"
+                                oninput="manualOne()">
                             <span>Minimum Price</span>
                         </label>
                     </div>
                     <div class="dash-separator"></div>
                     <div class=" custom__inputs">
                         <label>
-                            <input required='' type="number" min="0" max="8000" id="slider-input-2" value="0" oninput="manualTwo()">
+                            <input required='' type="number" min="0" max="8000" id="slider-input-2" value="0"
+                                oninput="manualTwo()">
                             <span>Maximum Price</span>
                         </label>
                     </div>
@@ -1018,11 +1020,11 @@
 
         <div class="search-button">
 
-            <form>
+            <a href="/cr_demo/modules/tenant/pages/units_after_search/units_after_search.php" class="link-reset">
 
                 <button class="btn btn-fill btn-primary">Search</button>
 
-            </form>
+            </a>
 
         </div>
 

@@ -38,7 +38,7 @@ $unit = $q_unit['data'];
 
         <div class="nav-back">
 
-            <a href="#">
+            <a href="/cr_demo/modules/tenant/pages/units_after_search/units_after_search.php">
                 <i class="bi bi-chevron-left"></i>
             </a>
 
@@ -1084,7 +1084,7 @@ $unit = $q_unit['data'];
 
         </a>
 
-        <a href="#">
+        <a href="../../../chat/pages/chat.php">
 
             <div class="chip btn-primary call">
 

@@ -83,7 +83,7 @@ if (isset($_GET['callback_url'])) {
 
                     <label>
 
-                        <input required="" type="text" name="password">
+                        <input required="" type="password" name="password">
                         <span>Password</span>
 
                     </label>
